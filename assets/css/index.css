@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #12100E;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5B49E; /* Soft Sand Beige */
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #8C6935; /* Deep Bronze/Gold */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5C687; /* Champagne Gold */
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #B89047; /* Vibrant Premium Bronze */
+}
+
+/* Glassmorphism Styles */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(184, 144, 71, 0.2);
+}
+
+/* Premium Glow Utilities */
+.glow-bronze {
+  box-shadow: 0 0 20px rgba(184, 144, 71, 0.3);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #B89047 0%, #E5C687 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Strict Typography Enforcement */
+h1, h2, h3, .strict-heading {
+  font-weight: 600 !important;
+}
+
+.strict-subheading {
+  font-weight: 500 !important; /* 450 - 550 weight */
+}
+
+.strict-paragraph {
+  font-weight: 400 !important; /* 400 - 500 weight */
+}
+
+/* Quick Utilities for Custom Scroll Behavior and Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* Center orphaned cards in the Conditions grid at lg (1024–1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .conditions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .conditions-grid > * {
+    flex: 0 0 calc(33.33% - 16px);
+  }
+}
+
+/* Dark Mode Text Contrast & Readability Optimizations */
+.dark .text-slate-200,
+.dark .dark\:text-slate-200 {
+  color: #f8fafc !important; /* slate-50 */
+}
+
+.dark .text-slate-300,
+.dark .dark\:text-slate-300 {
+  color: #f1f5f9 !important; /* slate-100 */
+}
+
+.dark .text-slate-400,
+.dark .dark\:text-slate-400 {
+  color: #e2e8f0 !important; /* slate-200 */
+}
+
+.dark .text-slate-500,
+.dark .dark\:text-slate-500 {
+  color: #cbd5e1 !important; /* slate-300 */
+}
+
+.dark .text-slate-600,
+.dark .dark\:text-slate-600 {
+  color: #e2e8f0 !important; /* slate-200 */
+}
+
+.dark .text-slate-700,
+.dark .dark\:text-slate-700 {
+  color: #f1f5f9 !important; /* slate-100 */
+}
+
+.dark .text-slate-800,
+.dark .dark\:text-slate-800 {
+  color: #f8fafc !important; /* slate-50 */
+}

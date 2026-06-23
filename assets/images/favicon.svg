@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8C6935;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B89047;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="64" height="64" rx="14" ry="14" fill="url(#brandGradient)"/>
+  
+  <!-- Passport Booklet -->
+  <rect x="18" y="10" width="28" height="44" rx="3.5" fill="white"/>
+  
+  <!-- Passport Details (matching background gradient) -->
+  <!-- Spine Line -->
+  <rect x="21" y="10" width="2" height="44" fill="url(#brandGradient)"/>
+  
+  <!-- Styled Text Lines -->
+  <line x1="26" y1="16" x2="40" y2="16" stroke="url(#brandGradient)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="26" y1="21" x2="35" y2="21" stroke="url(#brandGradient)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Center Globe Symbol -->
+  <circle cx="33" cy="31" r="6.5" fill="none" stroke="url(#brandGradient)" stroke-width="1.8"/>
+  <line x1="26.5" y1="31" x2="39.5" y2="31" stroke="url(#brandGradient)" stroke-width="1.5"/>
+  <ellipse cx="33" cy="31" rx="2.5" ry="6.5" fill="none" stroke="url(#brandGradient)" stroke-width="1.5"/>
+  
+  <!-- Biometric Chip Symbol -->
+  <rect x="30" y="43" width="6" height="4" rx="1" fill="none" stroke="url(#brandGradient)" stroke-width="1.5"/>
+  <line x1="28" y1="45" x2="30" y2="45" stroke="url(#brandGradient)" stroke-width="1.2"/>
+  <line x1="36" y1="45" x2="38" y2="45" stroke="url(#brandGradient)" stroke-width="1.2"/>
+  <circle cx="33" cy="45" r="0.8" fill="url(#brandGradient)"/>
+</svg>

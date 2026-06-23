@@ -1,1 +1,724 @@
-hello
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Im Consult | Premium Immigration Consultancy & Visa Advisory</title>
+  <meta name="description" content="Im Consult is a premium immigration consultancy and visa advisory. Specialized in Express Entry, Student Visas, Work Permits, and Permanent Residency.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Tailwind Config -->
+  <script src="assets/js/tailwind-config.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/index.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-medical-darkBg dark:text-medical-darkText min-h-screen flex flex-col transition-colors duration-300">
+
+  <!-- ================= STICKY HEADER ================= -->
+  <header id="sticky-header" class="sticky top-0 w-full z-50 bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 xl:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Agency Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse flex-shrink-0">
+          <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
+            <i class="fa-solid fa-passport text-lg"></i>
+          </div>
+          <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-5 xl:space-x-8 rtl:space-x-reverse flex-shrink-0">
+          <a href="index.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Home</a>
+          <a href="home-2.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Home 2</a>
+          <a href="about.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">About</a>
+          <a href="eligibility-checker.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Eligibility Checker</a>
+          <a href="blog.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Blog</a>
+          <a href="contact.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Contact</a>
+          <a href="dashboard.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Dashboard</a>
+        </nav>
+
+        <!-- Right Side Controls (Theme, RTL, Portal Button) -->
+        <div class="hidden lg:flex items-center space-x-3 xl:space-x-4 rtl:space-x-reverse flex-shrink-0">
+          <!-- RTL Toggle Button -->
+          <button class="rtl-toggle-btn w-10 h-10 flex items-center justify-center rounded-lg text-xs font-semibold uppercase tracking-wider border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors">
+            RTL
+          </button>
+          
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Sign Up CTA -->
+          <a href="signup.html" class="px-3 xl:px-5 py-2.5 rounded-lg bg-medical-blueLight text-white hover:bg-medical-blue transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm text-sm strict-subheading whitespace-nowrap">
+            Sign Up
+          </a>
+        </div>
+
+        <!-- Mobile Hamburg Menu Button -->
+        <div class="flex items-center space-x-2 rtl:space-x-reverse lg:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle Mobile Menu">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Home</a>
+      <a href="home-2.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Home 2</a>
+      <a href="about.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">About</a>
+      <a href="eligibility-checker.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Eligibility Checker</a>
+      <a href="blog.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Blog</a>
+      <a href="contact.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Contact</a>
+      <a href="dashboard.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Dashboard</a>
+      <a href="signup.html" class="block w-full text-center px-4 py-2.5 rounded-lg bg-medical-blueLight text-white strict-subheading mt-4">Sign Up</a>
+
+      <!-- Mobile Preferences Controls Row -->
+      <div class="flex items-center justify-between px-3 pt-4 border-t border-slate-100 dark:border-slate-800/80 mt-4">
+        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Preferences</span>
+        <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
+          <button class="rtl-toggle-btn px-3 py-1.5 flex items-center justify-center rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            RTL
+          </button>
+          <button class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    
+    <!-- ================= 1. HERO SECTION ================= -->
+    <section class="relative bg-slate-900 overflow-hidden py-20 lg:py-32 flex items-center">
+      <!-- Background Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-r from-medical-navy via-slate-900/90 to-transparent z-10"></div>
+      
+      <!-- Background Image -->
+      <div class="absolute inset-0 w-full h-full">
+        <img src="assets/images/hero-home-1.png" alt="Visa Consultant Advising Client" class="w-full h-full object-cover object-center transform scale-105 hover:scale-100 transition-transform duration-[6000ms]">
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
+        <div class="max-w-2xl text-left rtl:text-right">
+          <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3 py-1.5 rounded-full bg-medical-cyan/15 text-medical-cyan mb-6">
+            <span class="w-2 h-2 rounded-full bg-medical-cyan animate-pulse"></span>
+            <span class="text-xs uppercase tracking-wider strict-subheading">Registered Immigration Consultants</span>
+          </div>
+          <h1 class="strict-heading text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6">
+            Elite Visa Advisory for Your Global Migration
+          </h1>
+          <p class="strict-paragraph text-lg text-slate-300 mb-8 max-w-xl">
+            We provide transparent case tracking, accurate document checklists, and strategic immigration planning tailored for skilled workers, students, and families.
+          </p>
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+            <a href="contact.html" class="px-8 py-4 rounded-lg bg-medical-blueLight hover:bg-medical-blue text-white text-center transition-all duration-300 shadow-md strict-subheading">
+              Schedule Consultation
+            </a>
+            <a href="eligibility-checker.html" class="px-8 py-4 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-white text-center border border-slate-700 transition-all duration-300 strict-subheading">
+              Check Visa Eligibility
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. SERVICES OVERVIEW ================= -->
+    <section class="py-20 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="strict-heading text-3xl sm:text-4xl text-medical-navy dark:text-white mb-4">
+            Our Visa &amp; Immigration Services
+          </h2>
+          <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-base">
+            Providing comprehensive advisory from eligibility evaluation to document reviews and direct submission support for quick and stress-free visa approval.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <!-- Service 1 -->
+          <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-medical-blueLight/50 dark:hover:border-medical-cyan/50 hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden">
+            <!-- Image Banner -->
+            <div class="relative h-52 overflow-hidden">
+              <img src="assets/images/service-joint-care.png" alt="Express Entry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+            </div>
+            <!-- Content -->
+            <div class="p-6 flex flex-col flex-grow text-center items-center">
+              <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-3">Express Entry</h3>
+              <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4 flex-grow">
+                Federal Skilled Worker, Skilled Trades, and Canadian Experience Class draw optimization.
+              </p>
+              <a href="about.html" class="inline-flex items-center text-xs text-medical-blueLight dark:text-medical-cyan strict-subheading group-hover:underline">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right ml-1 rtl:rotate-180"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-medical-blueLight/50 dark:hover:border-medical-cyan/50 hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden">
+            <!-- Image Banner -->
+            <div class="relative h-52 overflow-hidden">
+              <img src="assets/images/service-fracture.png" alt="Study Permits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+            </div>
+            <!-- Content -->
+            <div class="p-6 flex flex-col flex-grow text-center items-center">
+              <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-3">Study Permits</h3>
+              <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4 flex-grow">
+                Admission and visa support for top educational destinations including Canada, UK, and Australia.
+              </p>
+              <a href="about.html" class="inline-flex items-center text-xs text-medical-blueLight dark:text-medical-cyan strict-subheading group-hover:underline">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right ml-1 rtl:rotate-180"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-medical-blueLight/50 dark:hover:border-medical-cyan/50 hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden">
+            <!-- Image Banner -->
+            <div class="relative h-52 overflow-hidden">
+              <img src="assets/images/service-sports-med.png" alt="Work Permits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+            </div>
+            <!-- Content -->
+            <div class="p-6 flex flex-col flex-grow text-center items-center">
+              <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-3">Work Permits</h3>
+              <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4 flex-grow">
+                Employer-sponsored visas, intracompany transfers, LMIA assessments, and job verification checks.
+              </p>
+              <a href="about.html" class="inline-flex items-center text-xs text-medical-blueLight dark:text-medical-cyan strict-subheading group-hover:underline">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right ml-1 rtl:rotate-180"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-medical-blueLight/50 dark:hover:border-medical-cyan/50 hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden">
+            <!-- Image Banner -->
+            <div class="relative h-52 overflow-hidden">
+              <img src="assets/images/service-spine-care.png" alt="Business Immigration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+            </div>
+            <!-- Content -->
+            <div class="p-6 flex flex-col flex-grow text-center items-center">
+              <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-3">Business &amp; PNP</h3>
+              <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4 flex-grow">
+                Provincial Nominee Programs, Startup Visas, and investor pathways for entrepreneurs.
+              </p>
+              <a href="about.html" class="inline-flex items-center text-xs text-medical-blueLight dark:text-medical-cyan strict-subheading group-hover:underline">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right ml-1 rtl:rotate-180"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. DESTINATION TRACKS ================= -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div class="max-w-xl">
+            <h2 class="strict-heading text-3xl text-medical-navy dark:text-white mb-4">
+              Top Visa Destination Tracks
+            </h2>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400">
+              We specialize in precise profile calculations, credentials assessment support, and document checklists for major migration destinations.
+            </p>
+          </div>
+          <a href="contact.html" class="mt-4 md:mt-0 px-6 py-3 rounded-lg bg-medical-blueLight hover:bg-medical-blue text-white strict-subheading text-sm transition-all duration-200">
+            Request Specialist Call
+          </a>
+        </div>
+
+        <div class="conditions-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          
+          <!-- Canada EE -->
+          <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:scale-[1.02] transition-transform">
+            <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-2">Canada EE</h3>
+            <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-4">
+              Federal Skilled Worker and Canadian Experience Class permanent residency points optimization.
+            </p>
+            <span class="text-xs text-medical-cyan strict-subheading block">Average process: 6 months</span>
+          </div>
+
+          <!-- UK Skilled Worker -->
+          <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:scale-[1.02] transition-transform">
+            <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-2">UK Skilled Visa</h3>
+            <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-4">
+              Certificate of Sponsorship (CoS) validation, shortage occupation track, and priority processing.
+            </p>
+            <span class="text-xs text-medical-cyan strict-subheading block">Average process: 4-8 weeks</span>
+          </div>
+
+          <!-- Australia PR -->
+          <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:scale-[1.02] transition-transform">
+            <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-2">Australia GSM</h3>
+            <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-4">
+              General Skilled Migration subclass 189/190/491 points testing, skills assessment, and nominations.
+            </p>
+            <span class="text-xs text-medical-cyan strict-subheading block">Average process: 3-5 months</span>
+          </div>
+
+          <!-- US H1-B & EB-2 -->
+          <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-150 dark:border-slate-800/80 shadow-sm hover:scale-[1.02] transition-transform">
+            <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-2">US H1-B / EB-2</h3>
+            <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-4">
+              Cap-subject lottery filings, National Interest Waivers (NIW), and specialty occupation processing.
+            </p>
+            <span class="text-xs text-medical-cyan strict-subheading block">Average process: 4-6 months</span>
+          </div>
+
+          <!-- Germany Opportunity -->
+          <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:scale-[1.02] transition-transform">
+            <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-2">Germany Card</h3>
+            <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-4">
+              Chancenkarte points-based job seeker pathways, degree equivalency matching, and EU Blue Cards.
+            </p>
+            <span class="text-xs text-medical-cyan strict-subheading block">Average process: 2-3 months</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. WHY CHOOSE IM CONSULT ================= -->
+    <section class="py-24 bg-white dark:bg-slate-950 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-semibold uppercase tracking-wider text-medical-cyan strict-subheading block mb-3">Why Im Consult</span>
+          <h2 class="strict-heading text-3xl sm:text-4xl text-medical-navy dark:text-white mb-4">
+            Transparent Advisory for Every Applicant
+          </h2>
+          <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            From your initial assessment to your successful landing, our registered consultants combine legal expertise with transparent real-time case tracking to eliminate visa application anxiety.
+          </p>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div class="text-center p-6 rounded-2xl bg-medical-blueLight/5 dark:bg-slate-900 border border-medical-blueLight/15 dark:border-slate-800 group hover:border-medical-blueLight/40 transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-medical-blueLight/10 text-medical-blueLight flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-users text-2xl"></i>
+            </div>
+            <span class="strict-heading text-3xl font-bold text-medical-navy dark:text-white block">12,400+</span>
+            <span class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mt-1 block">Visas Approved</span>
+          </div>
+          <div class="text-center p-6 rounded-2xl bg-medical-teal/5 dark:bg-slate-900 border border-medical-teal/15 dark:border-slate-800 group hover:border-medical-teal/40 transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-medical-teal/10 text-medical-teal flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-circle-check text-2xl"></i>
+            </div>
+            <span class="strict-heading text-3xl font-bold text-medical-navy dark:text-white block">97%</span>
+            <span class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mt-1 block">Visa Success Rate</span>
+          </div>
+          <div class="text-center p-6 rounded-2xl bg-medical-blueLight/5 dark:bg-slate-900 border border-medical-blueLight/15 dark:border-slate-800 group hover:border-medical-blueLight/40 transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-medical-blueLight/10 text-medical-blueLight dark:text-medical-cyan flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-passport text-2xl"></i>
+            </div>
+            <span class="strict-heading text-3xl font-bold text-medical-navy dark:text-white block">20+</span>
+            <span class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mt-1 block">Regulated Consultants</span>
+          </div>
+          <div class="text-center p-6 rounded-2xl bg-emerald-500/5 dark:bg-slate-900 border border-emerald-500/15 dark:border-slate-800 group hover:border-emerald-400/40 transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-award text-2xl"></i>
+            </div>
+            <span class="strict-heading text-3xl font-bold text-medical-navy dark:text-white block">15 Yrs</span>
+            <span class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mt-1 block">Combined Experience</span>
+          </div>
+        </div>
+
+        <!-- Feature Highlights Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Feature 1: Real-time Case Tracking -->
+          <div class="relative p-8 rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-medical-blueLight/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500"></div>
+            <img src="assets/images/service-ai-diagnostics.png" alt="Real-time Case Tracking" class="w-24 h-24 rounded-2xl object-cover mb-6 shadow-sm border border-slate-200/50 dark:border-slate-800 group-hover:scale-105 transition-transform duration-300">
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-3">Real-time Case Tracking</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-5">
+              Our secure client portal uses active milestone tracking and automated status checks to pinpoint case stages and updates with complete transparency.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-500 dark:text-slate-400">
+                <i class="fa-solid fa-circle-check text-medical-teal text-xs flex-shrink-0"></i>
+                <span>Milestone stage progress alerts</span>
+              </li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-500 dark:text-slate-400">
+                <i class="fa-solid fa-circle-check text-medical-teal text-xs flex-shrink-0"></i>
+                <span>Integrated document checklist indicators</span>
+              </li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-500 dark:text-slate-400">
+                <i class="fa-solid fa-circle-check text-medical-teal text-xs flex-shrink-0"></i>
+                <span>Direct secure messaging with consultants</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Feature 2: Regulated Advisors -->
+          <div class="relative p-8 rounded-3xl bg-gradient-to-br from-medical-navyLight to-slate-900 border border-medical-blueLight/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-medical-blueLight/10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500"></div>
+            <img src="assets/images/service-micro-surgery.png" alt="Regulated Consultants" class="w-24 h-24 rounded-2xl object-cover mb-6 shadow-sm border border-slate-200/50 dark:border-slate-800 group-hover:scale-105 transition-transform duration-300">
+            <h3 class="strict-heading text-xl text-white mb-3">Regulated Advisors</h3>
+            <p class="strict-paragraph text-slate-300 text-sm leading-relaxed mb-5">
+              Our RCIC registered advisors and immigration attorneys submit applications directly — minimizing administrative errors, documentation oversights, and verification risks.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-300">
+                <i class="fa-solid fa-circle-check text-medical-cyan text-xs flex-shrink-0"></i>
+                <span>Express Entry &amp; PNP immigration experts</span>
+              </li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-300">
+                <i class="fa-solid fa-circle-check text-medical-cyan text-xs flex-shrink-0"></i>
+                <span>Registered RCIC &amp; MARA practitioners</span>
+              </li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-300">
+                <i class="fa-solid fa-circle-check text-medical-cyan text-xs flex-shrink-0"></i>
+                <span>Certified educational admission counselors</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Feature 3: Customized Checklists -->
+          <div class="relative p-8 rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500"></div>
+            <img src="assets/images/service-sport-rehab.png" alt="Targeted Checklists" class="w-24 h-24 rounded-2xl object-cover mb-6 shadow-sm border border-slate-200/50 dark:border-slate-800 group-hover:scale-105 transition-transform duration-300">
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-3">Customized Checklists</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-5">
+              Every immigration program is mapped to a customized requirements list — from credentials evaluation templates to structured employer reference letter formats.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-500 dark:text-slate-400">
+                <i class="fa-solid fa-circle-check text-emerald-500 text-xs flex-shrink-0"></i>
+                <span>Step-by-step document checkmarks</span>
+              </li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-500 dark:text-slate-400">
+                <i class="fa-solid fa-circle-check text-emerald-500 text-xs flex-shrink-0"></i>
+                <span>Mock interview preparation guidelines</span>
+              </li>
+              <li class="flex items-center space-x-2 rtl:space-x-reverse text-xs text-slate-500 dark:text-slate-400">
+                <i class="fa-solid fa-circle-check text-emerald-500 text-xs flex-shrink-0"></i>
+                <span>Proof of Funds bank template libraries</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Bottom CTA Row -->
+        <div class="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="about.html" class="px-7 py-3.5 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-sm strict-subheading transition-all duration-200 shadow-lg shadow-medical-blueLight/20">
+            Meet Our Advisory Team
+          </a>
+          <a href="contact.html" class="px-7 py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm strict-subheading transition-all duration-200">
+            Request a Consultation
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= 5. CLIENT SUCCESS STORIES ================= -->
+    <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
+      <!-- Background subtle dots -->
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-semibold uppercase tracking-wider text-medical-cyan strict-subheading block mb-2">Success Stories</span>
+          <h2 class="strict-heading text-3xl sm:text-4xl text-white mb-4">
+            Client Relocation Journeys
+          </h2>
+          <p class="strict-paragraph text-slate-400 text-sm">
+            See how professionals, students, and families successfully relocated using our advisory tracks.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Story 1 -->
+          <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700/50 backdrop-blur-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-4 rtl:space-x-reverse mb-6">
+                <img src="assets/images/profile-brandon.png" alt="Brandon Miller" class="w-14 h-14 rounded-full object-cover border border-slate-700 shadow-sm flex-shrink-0">
+                <div>
+                  <h3 class="strict-heading text-lg text-white">Brandon Miller</h3>
+                  <span class="text-xs text-slate-400 strict-subheading">Software Engineer (Canada PR)</span>
+                </div>
+              </div>
+              <p class="strict-paragraph text-slate-300 italic mb-6 leading-relaxed">
+                "Securing a Canada PR felt impossible with the high CRS cut-offs. Sarah Jenkins optimized my CRS profile, guided me on language test preparation, and tracked my documents. I received my Invitation to Apply in 4 weeks and arrived in Toronto smoothly!"
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t border-slate-700/60 pt-4">
+              <span class="text-xs text-medical-cyan strict-subheading">Visa: Express Entry FSWP</span>
+              <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/20 text-emerald-400 rounded-full">PR Issued in 5 Months</span>
+            </div>
+          </div>
+
+          <!-- Story 2 -->
+          <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700/50 backdrop-blur-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-4 rtl:space-x-reverse mb-6">
+                <img src="assets/images/profile-elena.png" alt="Elena Rostova" class="w-14 h-14 rounded-full object-cover border border-slate-700 shadow-sm flex-shrink-0">
+                <div>
+                  <h3 class="strict-heading text-lg text-white">Elena Rostova</h3>
+                  <span class="text-xs text-slate-400 strict-subheading">Postgraduate Student (UK Student Visa)</span>
+                </div>
+              </div>
+              <p class="strict-paragraph text-slate-300 italic mb-6 leading-relaxed">
+                "Applying for a UK university and student visa was overwhelming. Im Consult's step-by-step document checklist made it so simple. I uploaded everything, got my visa stamped, and start my master's in London next month!"
+              </p>
+            </div>
+            <div class="flex items-center justify-between border-t border-slate-700/60 pt-4">
+              <span class="text-xs text-medical-cyan strict-subheading">Visa: UK Student Route</span>
+              <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/20 text-emerald-400 rounded-full">Visa Issued in 15 Days</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. IMMIGRATION PROCESS TIMELINE ================= -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="strict-heading text-3xl text-medical-navy dark:text-white mb-4">
+            Our Immigration Advisory Timeline
+          </h2>
+          <p class="strict-paragraph text-slate-600 dark:text-slate-400">
+            A structured, transparent step-by-step roadmap designed to guide you safely from initial evaluation to successful landing.
+          </p>
+        </div>
+
+        <div class="relative border-l-2 border-medical-cyan/30 rtl:border-l-0 rtl:border-r-2 rtl:border-medical-cyan/30 max-w-3xl mx-auto pl-8 rtl:pl-0 rtl:pr-8 space-y-12">
+          <!-- Step 1 -->
+          <div class="relative">
+            <div class="flex items-center space-x-3 rtl:space-x-reverse mb-2">
+              <div class="absolute -left-[2.75rem] rtl:-right-[2.75rem] rtl:left-auto w-5 h-5 rounded-full bg-medical-blueLight border-4 border-white dark:border-slate-900 z-10 flex-shrink-0"></div>
+              <span class="text-xs uppercase font-semibold text-medical-cyan tracking-wider strict-subheading">Phase 1</span>
+            </div>
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-2">Profile &amp; Eligibility Assessment</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
+              We begin with a detailed eligibility evaluation, calculating your points (CRS/points grid) and identifying the best migration pathways.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="relative">
+            <div class="flex items-center space-x-3 rtl:space-x-reverse mb-2">
+              <div class="absolute -left-[2.75rem] rtl:-right-[2.75rem] rtl:left-auto w-5 h-5 rounded-full bg-medical-blueLight border-4 border-white dark:border-slate-900 z-10 flex-shrink-0"></div>
+              <span class="text-xs uppercase font-semibold text-medical-cyan tracking-wider strict-subheading">Phase 2</span>
+            </div>
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-2">Customized Strategy Mapping</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
+              We map out your application strategy, detailing required documents, credential evaluations (WES/ECA), and language test goals.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="relative">
+            <div class="flex items-center space-x-3 rtl:space-x-reverse mb-2">
+              <div class="absolute -left-[2.75rem] rtl:-right-[2.75rem] rtl:left-auto w-5 h-5 rounded-full bg-medical-blueLight border-4 border-white dark:border-slate-900 z-10 flex-shrink-0"></div>
+              <span class="text-xs uppercase font-semibold text-medical-cyan tracking-wider strict-subheading">Phase 3</span>
+            </div>
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-2">Document Collection &amp; Review</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
+              You enter the document compilation phase. We review employment references, proof of funds letters, and verify police clearances.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="relative">
+            <div class="flex items-center space-x-3 rtl:space-x-reverse mb-2">
+              <div class="absolute -left-[2.75rem] rtl:-right-[2.75rem] rtl:left-auto w-5 h-5 rounded-full bg-medical-blueLight border-4 border-white dark:border-slate-900 z-10 flex-shrink-0"></div>
+              <span class="text-xs uppercase font-semibold text-medical-cyan tracking-wider strict-subheading">Phase 4</span>
+            </div>
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-2">Profile Submission &amp; Invitation</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
+              We submit your profile into pools. Upon receiving the Invitation to Apply (ITA), we review the complete visa file before submission.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="relative">
+            <div class="flex items-center space-x-3 rtl:space-x-reverse mb-2">
+              <div class="absolute -left-[2.75rem] rtl:-right-[2.75rem] rtl:left-auto w-5 h-5 rounded-full bg-emerald-500 border-4 border-white dark:border-slate-900 z-10 flex-shrink-0"></div>
+              <span class="text-xs uppercase font-semibold text-emerald-500 tracking-wider strict-subheading">Phase 5</span>
+            </div>
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-2">Visa Approval &amp; Relocation Support</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
+              Final visa stamping and pre-departure briefings. We prepare you for landing checks and provide initial settlement support.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. RELOCATION PARTNERS ================= -->
+    <section class="py-20 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-medical-cyan strict-subheading block mb-2">Settlement Support</span>
+            <h2 class="strict-heading text-3xl text-medical-navy dark:text-white mb-6">
+              Hassle-Free Relocation &amp; Landing
+            </h2>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+              We partner with global financial networks, student accommodation portals, and housing agencies to make your relocation as affordable and stress-free as possible.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start space-x-2.5 rtl:space-x-reverse">
+                <i class="fa-solid fa-circle-check text-medical-teal mt-1"></i>
+                <span class="strict-paragraph text-slate-700 dark:text-slate-300 text-sm">Affiliations with verified global housing networks</span>
+              </li>
+              <li class="flex items-start space-x-2.5 rtl:space-x-reverse">
+                <i class="fa-solid fa-circle-check text-medical-teal mt-1"></i>
+                <span class="strict-paragraph text-slate-700 dark:text-slate-300 text-sm">Dedicated overseas bank account setups for proof of funds</span>
+              </li>
+              <li class="flex items-start space-x-2.5 rtl:space-x-reverse">
+                <i class="fa-solid fa-circle-check text-medical-teal mt-1"></i>
+                <span class="strict-paragraph text-slate-700 dark:text-slate-300 text-sm">Post-arrival orientation counseling and community connections</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="inline-flex items-center text-sm text-medical-blueLight dark:text-medical-cyan font-semibold hover:underline">
+              <span>View Relocation Partners List</span>
+              <i class="fa-solid fa-arrow-right ml-1.5 rtl:rotate-180"></i>
+            </a>
+          </div>
+
+          <!-- Partners Grid -->
+          <div class="grid grid-cols-2 gap-6 p-8 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+            <div class="group h-20 bg-white dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-center p-4 hover:shadow-lg hover:shadow-medical-blueLight/10 dark:hover:shadow-medical-cyan/5 hover:border-medical-blueLight dark:hover:border-medical-cyan hover:scale-[1.03] hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 cursor-pointer">
+              <span class="text-sm font-bold tracking-wider text-slate-800 dark:text-slate-200 group-hover:text-medical-blue dark:group-hover:text-medical-cyan transition-colors duration-300">TORONTO HOME</span>
+            </div>
+            <div class="group h-20 bg-white dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-center p-4 hover:shadow-lg hover:shadow-medical-blueLight/10 dark:hover:shadow-medical-cyan/5 hover:border-medical-blueLight dark:hover:border-medical-cyan hover:scale-[1.03] hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 cursor-pointer">
+              <span class="text-sm font-bold tracking-wider text-slate-800 dark:text-slate-200 group-hover:text-medical-blue dark:group-hover:text-medical-cyan transition-colors duration-300">CIBC BANK</span>
+            </div>
+            <div class="group h-20 bg-white dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-center p-4 hover:shadow-lg hover:shadow-medical-blueLight/10 dark:hover:shadow-medical-cyan/5 hover:border-medical-blueLight dark:hover:border-medical-cyan hover:scale-[1.03] hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 cursor-pointer">
+              <span class="text-sm font-bold tracking-wider text-slate-800 dark:text-slate-200 group-hover:text-medical-blue dark:group-hover:text-medical-cyan transition-colors duration-300">STUDY LINK</span>
+            </div>
+            <div class="group h-20 bg-white dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-center p-4 hover:shadow-lg hover:shadow-medical-blueLight/10 dark:hover:shadow-medical-cyan/5 hover:border-medical-blueLight dark:hover:border-medical-cyan hover:scale-[1.03] hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 cursor-pointer">
+              <span class="text-sm font-bold tracking-wider text-slate-800 dark:text-slate-200 group-hover:text-medical-blue dark:group-hover:text-medical-cyan transition-colors duration-300">FLYWIRE</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 text-sm py-16 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        
+        <!-- Agency Info -->
+        <div>
+          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse mb-6">
+            <div class="w-8 h-8 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
+              <i class="fa-solid fa-passport"></i>
+            </div>
+            <span class="strict-heading text-lg text-medical-navy dark:text-white">Im Consult</span>
+          </a>
+          <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs leading-relaxed mb-6">
+            Professional visa consultation, credential assessments, and skilled worker migration processing to make relocation simple.
+          </p>
+          <div class="flex space-x-4 rtl:space-x-reverse">
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-twitter text-xs"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram text-xs"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-linkedin-in text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Home (Corporate)</a></li>
+            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Home (Pathways)</a></li>
+            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">About Our Firm</a></li>
+            <li><a href="eligibility-checker.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Eligibility Checker</a></li>
+            <li><a href="blog.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Advisory Blog</a></li>
+            <li><a href="dashboard.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Client Dashboard</a></li>
+          </ul>
+        </div>
+
+        <!-- Visa Streams -->
+        <div>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Visa Streams</h4>
+          <ul class="space-y-3">
+            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Canada Express Entry</a></li>
+            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">UK Skilled Worker Route</a></li>
+            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Australia Skilled Migration</a></li>
+            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Provincial Nominee Streams</a></li>
+            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Global Student Visas</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info & Helpline -->
+        <div>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Contact &amp; Support</h4>
+          <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-3">
+            104 Corporate Plaza, Suite 400, Boston, MA 02115
+          </p>
+          <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-4">
+            Email: contact@imconsult.com
+          </p>
+          <a href="tel:+15559117767" class="block w-full py-3 px-4 bg-rose-50 hover:bg-rose-100/70 text-rose-600 border border-rose-200 dark:bg-rose-950/40 dark:hover:bg-rose-900/40 dark:text-rose-400 dark:border-rose-800/60 rounded-xl text-center transition-all">
+            <span class="block text-xs strict-heading uppercase tracking-wider">Consultation Hotline</span>
+            <span class="text-sm font-semibold tracking-wide">+1 (555) 911-7767</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-slate-200 dark:border-slate-800/80 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-500">
+        <p class="strict-paragraph">&copy; 2026 Im Consult. All rights reserved.</p>
+        <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0">
+          <a href="#" class="hover:text-slate-800 dark:hover:text-slate-300 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-800 dark:hover:text-slate-300 transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Shared JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

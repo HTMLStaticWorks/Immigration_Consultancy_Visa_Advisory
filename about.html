@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Firm | Im Consult</title>
+  <meta name="description" content="Learn about Im Consult. Our regulated consultants, visa attorneys, advanced credentials matching database, and client success history.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="shortcut icon" href="assets/images/favicon.svg">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Tailwind Config -->
+  <script src="assets/js/tailwind-config.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/index.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-medical-darkBg dark:text-medical-darkText min-h-screen flex flex-col transition-colors duration-300">
+
+  <!-- ================= STICKY HEADER ================= -->
+  <header id="sticky-header" class="sticky top-0 w-full z-50 bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 xl:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Agency Logo -->
+        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse flex-shrink-0">
+          <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
+            <i class="fa-solid fa-passport text-lg"></i>
+          </div>
+          <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-5 xl:space-x-8 rtl:space-x-reverse flex-shrink-0">
+          <a href="index.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Home</a>
+          <a href="home-2.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Home 2</a>
+          <a href="about.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">About</a>
+          <a href="eligibility-checker.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Eligibility Checker</a>
+          <a href="blog.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Blog</a>
+          <a href="contact.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Contact</a>
+          <a href="dashboard.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Dashboard</a>
+        </nav>
+
+        <!-- Right Side Controls (Theme, RTL, Portal Button) -->
+        <div class="hidden lg:flex items-center space-x-3 xl:space-x-4 rtl:space-x-reverse flex-shrink-0">
+          <button class="rtl-toggle-btn w-10 h-10 flex items-center justify-center rounded-lg text-xs font-semibold uppercase tracking-wider border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors">
+            RTL
+          </button>
+          
+          <button class="theme-toggle-btn w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- Sign Up CTA -->
+          <a href="signup.html" class="px-3 xl:px-5 py-2.5 rounded-lg bg-medical-blueLight text-white hover:bg-medical-blue transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm text-sm strict-subheading whitespace-nowrap">
+            Sign Up
+          </a>
+        </div>
+
+        <!-- Mobile Hamburg Menu Button -->
+        <div class="flex items-center space-x-2 rtl:space-x-reverse lg:hidden">
+          <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle Mobile Menu">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Home</a>
+      <a href="home-2.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Home 2</a>
+      <a href="about.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">About</a>
+      <a href="eligibility-checker.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Eligibility Checker</a>
+      <a href="blog.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Blog</a>
+      <a href="contact.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Contact</a>
+      <a href="dashboard.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Dashboard</a>
+      <a href="signup.html" class="block w-full text-center px-4 py-2.5 rounded-lg bg-medical-blueLight text-white strict-subheading mt-4">Sign Up</a>
+
+      <!-- Mobile Preferences Controls Row -->
+      <div class="flex items-center justify-between px-3 pt-4 border-t border-slate-100 dark:border-slate-800/80 mt-4">
+        <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Preferences</span>
+        <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
+          <button class="rtl-toggle-btn px-3 py-1.5 flex items-center justify-center rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            RTL
+          </button>
+          <button class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- ================= 1. HERO BANNER ================= -->
+    <section class="relative bg-gradient-to-br from-medical-navy via-slate-900 to-slate-950 text-white overflow-hidden min-h-[520px] flex items-center">
+      <!-- Background dot pattern -->
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+      <!-- Decorative glow -->
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-medical-blueLight/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+          <!-- Left: Text Content -->
+          <div class="space-y-6">
+            <span class="inline-block text-xs font-semibold uppercase tracking-widest text-medical-cyan strict-subheading border border-medical-cyan/30 bg-medical-cyan/10 px-3 py-1 rounded-full">
+              About Our Firm
+            </span>
+            <h1 class="strict-heading text-4xl sm:text-5xl text-white leading-tight">
+              Dedicated to Clear Pathways &amp; Global Migration
+            </h1>
+            <p class="strict-paragraph text-slate-300 text-base leading-relaxed max-w-lg">
+              Combining regulated immigration advisors with experienced visa attorneys to offer unified, personalized relocation tracks that get you approved faster.
+            </p>
+
+            <!-- Quick Stats Row -->
+            <div class="flex flex-wrap gap-6 pt-2">
+              <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
+                <div class="w-9 h-9 rounded-lg bg-medical-blueLight/20 text-medical-cyan flex items-center justify-center">
+                  <i class="fa-solid fa-users text-sm"></i>
+                </div>
+                <div>
+                  <span class="block text-lg font-bold text-white strict-heading">12,400+</span>
+                  <span class="text-[10px] text-slate-400 strict-subheading uppercase tracking-wider">Visas Approved</span>
+                </div>
+              </div>
+              <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
+                <div class="w-9 h-9 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                  <i class="fa-solid fa-circle-check text-sm"></i>
+                </div>
+                <div>
+                  <span class="block text-lg font-bold text-white strict-heading">97%</span>
+                  <span class="text-[10px] text-slate-400 strict-subheading uppercase tracking-wider">Visa Success</span>
+                </div>
+              </div>
+              <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
+                <div class="w-9 h-9 rounded-lg bg-medical-blueLight/20 text-medical-cyan flex items-center justify-center">
+                  <i class="fa-solid fa-passport text-sm"></i>
+                </div>
+                <div>
+                  <span class="block text-lg font-bold text-white strict-heading">20+</span>
+                  <span class="text-[10px] text-slate-400 strict-subheading uppercase tracking-wider">Advisory Experts</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="contact.html" class="px-6 py-3 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-sm strict-subheading transition-all duration-200 shadow-lg shadow-medical-blueLight/25">
+                Request Consultation
+              </a>
+              <a href="signup.html" class="px-6 py-3 rounded-xl border border-slate-600 hover:border-slate-500 hover:bg-slate-800/60 text-slate-200 text-sm strict-subheading transition-all duration-200">
+                Join as Client
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Hero Image -->
+          <div class="relative hidden lg:block">
+            <!-- Image glow frame -->
+            <div class="absolute -inset-3 bg-gradient-to-br from-medical-blueLight/20 to-medical-cyan/10 rounded-3xl blur-xl"></div>
+            <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40">
+              <img src="assets/images/about-hero.png"
+                   alt="Im Consult advisors and immigration attorneys in state-of-the-art consultation chambers"
+                   class="w-full h-[380px] object-cover object-center">
+              <!-- Bottom gradient fade -->
+              <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+              <!-- Bottom label badge -->
+              <div class="absolute bottom-4 left-4 flex items-center space-x-2 rtl:space-x-reverse bg-slate-950/70 backdrop-blur-sm border border-slate-700/50 px-3 py-1.5 rounded-full">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-xs text-slate-200 font-medium">Im Consult Headquarters — Boston, MA</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. AGENCY OVERVIEW ================= -->
+    <section class="py-20 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-medical-cyan strict-subheading block mb-2">Our History</span>
+            <h2 class="strict-heading text-3xl text-medical-navy dark:text-white mb-6">
+              Im Consult Visa Advisory
+            </h2>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 mb-4 leading-relaxed text-sm">
+              Founded in 2014 by legal experts and immigration consultants, Im Consult was built to serve global professionals who need clear, transparent visa support. We believed that standard immigration agencies lacked the dynamic, step-by-step digital progress tracking required to make applicants feel secure and confident.
+            </p>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 mb-6 leading-relaxed text-sm">
+              Today, our agency operates a state-of-the-art credential evaluation matching engine, global relocation planning systems, and on-site consultation suites, hosting over 25 immigration attorneys and specialists.
+            </p>
+            
+            <div class="flex items-center space-x-8 rtl:space-x-reverse">
+              <div>
+                <span class="text-3xl strict-heading text-medical-blueLight dark:text-medical-cyan block">12k+</span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 strict-paragraph">Clients Relocated</span>
+              </div>
+              <div>
+                <span class="text-3xl strict-heading text-medical-blueLight dark:text-medical-cyan block">25+</span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 strict-paragraph">Advisory Staff</span>
+              </div>
+              <div>
+                <span class="text-3xl strict-heading text-medical-blueLight dark:text-medical-cyan block">10</span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 strict-paragraph">Years of Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 h-96 group">
+            <img src="assets/images/boston-campus.png" alt="Boston Advisory Chambers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-card text-slate-900 dark:text-white flex items-center justify-between">
+              <div>
+                <span class="text-xs font-semibold block uppercase tracking-wider text-medical-blueLight">Boston Advisory Chambers</span>
+                <p class="strict-paragraph text-xs">Our headquarters housing our case processing operations.</p>
+              </div>
+              <a href="contact.html" class="p-2.5 rounded-lg bg-medical-blueLight text-white hover:bg-medical-blue"><i class="fa-solid fa-map-location-dot"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. MISSION & VISION ================= -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-900/40 border-t border-b border-slate-100 dark:border-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
+          <div class="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+            <div class="w-12 h-12 rounded-xl bg-medical-blueLight/10 text-medical-blueLight flex items-center justify-center mb-6">
+              <i class="fa-solid fa-bullseye text-xl"></i>
+            </div>
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-4">Our Mission</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              To provide professional, transparent migration advisory and active document assistance to all levels of applicants, enabling smooth and fast global transitions through regulated expertise, digital progress portals, and personalized support.
+            </p>
+          </div>
+
+          <div class="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+            <div class="w-12 h-12 rounded-xl bg-medical-teal/10 text-medical-teal flex items-center justify-center mb-6">
+              <i class="fa-solid fa-eye text-xl"></i>
+            </div>
+            <h3 class="strict-heading text-xl text-medical-navy dark:text-white mb-4">Our Vision</h3>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+              To be the premier global immigration advisory partner, leading the industry in digital case tracking, credentials evaluations, and secure client-consultant collaboration.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. MEET THE ADVISORS ================= -->
+    <section class="py-20 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-semibold text-medical-cyan uppercase tracking-wider strict-subheading block mb-2">Immigration Specialists</span>
+          <h2 class="strict-heading text-3xl text-medical-navy dark:text-white mb-4">
+            Meet Our Regulated Advisors &amp; Attorneys
+          </h2>
+          <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
+            Regulated specialists in permanent residency programs, work permit sponsorships, and skilled migrations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Advisor 1 -->
+          <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col items-center text-center">
+            <img src="assets/images/profile-sarah.png" alt="Sarah Jenkins, RCIC" class="w-32 h-32 rounded-full object-cover mb-6 border-2 border-medical-cyan/20">
+            <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-1">Sarah Jenkins, RCIC</h3>
+            <span class="text-xs text-medical-cyan strict-subheading uppercase tracking-wider block mb-4">Skilled Migration &amp; PR Tracks</span>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs mb-6 max-w-xs flex-grow">
+              Regulated Canadian Immigration Consultant (RCIC) with 18+ years of experience optimizing Express Entry and PNP profiles.
+            </p>
+            <span class="text-xs text-slate-500 dark:text-slate-400">CICC Member | CAPIC Registered</span>
+          </div>
+
+          <!-- Advisor 2 -->
+          <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col items-center text-center">
+            <img src="assets/images/profile-marcus.png" alt="Marcus Vance, Esq." class="w-32 h-32 rounded-full object-cover mb-6 border-2 border-medical-blueLight/20">
+            <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-1">Marcus Vance, Esq.</h3>
+            <span class="text-xs text-medical-cyan strict-subheading uppercase tracking-wider block mb-4">Business &amp; Investor Visas</span>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs mb-6 max-w-xs flex-grow">
+              Senior Immigration Attorney specialized in investor programs, corporate intracompany transfers, and startup visas.
+            </p>
+            <span class="text-xs text-slate-500 dark:text-slate-400">Harvard Law School | AILA Member</span>
+          </div>
+
+          <!-- Advisor 3 -->
+          <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col items-center text-center">
+            <img src="assets/images/profile-david.png" alt="David Cho, MARA" class="w-32 h-32 rounded-full object-cover mb-6 border-2 border-medical-teal/20">
+            <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-1">David Cho, MARA</h3>
+            <span class="text-xs text-medical-cyan strict-subheading uppercase tracking-wider block mb-4">Australia &amp; Europe Migration</span>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs mb-6 max-w-xs flex-grow">
+              Registered Migration Agent (MARA) specialized in Australian GSM skilled visas and European opportunity card pathways.
+            </p>
+            <span class="text-xs text-slate-500 dark:text-slate-400">Sydney Law School | MIA Member</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. CASE MANAGERS ================= -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-semibold text-medical-teal uppercase tracking-wider strict-subheading block mb-2">Case Managers</span>
+          <h2 class="strict-heading text-3xl text-medical-navy dark:text-white mb-4">
+            Our Senior Case &amp; Document Managers
+          </h2>
+          <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
+            Certified documentation experts specialized in transcript sourcing, financial trails, and language preparation guidelines.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Manager 1 -->
+          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col items-center text-center shadow-sm">
+            <img src="assets/images/profile-emma.png" alt="Emma Lawson" class="w-24 h-24 rounded-full object-cover mb-4 border-2 border-medical-blueLight/20">
+            <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-1">Emma Lawson</h3>
+            <span class="text-xs text-medical-teal strict-subheading block mb-3">Lead Express Entry Case Manager</span>
+            <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs">
+              Specializes in CRS points optimization, WES credentials validation, and employment reference letter audits.
+            </p>
+          </div>
+
+          <!-- Manager 2 -->
+          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col items-center text-center shadow-sm">
+            <img src="assets/images/profile-robert.png" alt="Robert Diaz" class="w-24 h-24 rounded-full object-cover mb-4 border-2 border-medical-teal/20">
+            <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-1">Robert Diaz</h3>
+            <span class="text-xs text-medical-teal strict-subheading block mb-3">Student Admission &amp; Visa Expert</span>
+            <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs">
+              Expert in university admission mapping, statement of purpose (SOP) structures, and study permit compliance checks.
+            </p>
+          </div>
+
+          <!-- Manager 3 -->
+          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col items-center text-center shadow-sm">
+            <img src="assets/images/profile-jessica.png" alt="Jessica Chen" class="w-24 h-24 rounded-full object-cover mb-4 border-2 border-emerald-500/20">
+            <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-1">Jessica Chen</h3>
+            <span class="text-xs text-medical-teal strict-subheading block mb-3">Employer Sponsorship Specialist</span>
+            <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs">
+              Over 10 years verifying employer certificates of sponsorship, LMIA files, and corporate intracompany relocations.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. TRUSTED MEMBERSHIPS ================= -->
+    <section class="py-16 bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+          <span class="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider strict-subheading block">Trusted Memberships</span>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-12">
+          <span class="strict-heading text-sm text-slate-500 dark:text-slate-400 hover:text-medical-blueLight dark:hover:text-medical-cyan hover:scale-105 transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100">CICC REGISTERED</span>
+          <span class="strict-heading text-sm text-slate-500 dark:text-slate-400 hover:text-medical-blueLight dark:hover:text-medical-cyan hover:scale-105 transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100">MARA REGISTERED</span>
+          <span class="strict-heading text-sm text-slate-500 dark:text-slate-400 hover:text-medical-blueLight dark:hover:text-medical-cyan hover:scale-105 transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100">CAPIC MEMBER</span>
+          <span class="strict-heading text-sm text-slate-500 dark:text-slate-400 hover:text-medical-blueLight dark:hover:text-medical-cyan hover:scale-105 transition-all duration-300 cursor-pointer opacity-70 hover:opacity-100">AILA LEGAL TEAM</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. DOCUMENT LABS SHOWCASE ================= -->
+    <section class="py-20 bg-white dark:bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          <div>
+            <span class="text-xs font-semibold text-medical-cyan uppercase tracking-wider strict-subheading block mb-2">Our Operations</span>
+            <h2 class="strict-heading text-3xl text-medical-navy dark:text-white mb-6">
+              State-of-the-Art Document Labs
+            </h2>
+            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+              We believe professional filing requires absolute precision. Im Consult operates secure data servers and document validation labs to review and archive files safely.
+            </p>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-100 dark:border-slate-800">
+                <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-1">Credential Matching Lab</h4>
+                <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs">Equipped with global educational databases for immediate equivalency mapping.</p>
+              </div>
+              <div class="p-4 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-100 dark:border-slate-800">
+                <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-1">Secure Case Archiving</h4>
+                <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs">Fully encrypted document cloud servers complying with privacy standards.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="h-64 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm relative group">
+              <img src="assets/images/facility-motion-lab.png" alt="Credential Matching Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-slate-950/95 via-slate-950/60 to-transparent">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-sm border border-white/10">
+                  <span class="w-2 h-2 rounded-full bg-medical-cyan flex-shrink-0"></span>
+                  <span class="text-[10px] font-bold tracking-wider text-white uppercase">Case Analytics Hub</span>
+                </span>
+              </div>
+            </div>
+            <div class="h-64 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm relative group">
+              <img src="assets/images/facility-hydrotherapy.png" alt="Secure Archive Center" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-slate-950/95 via-slate-950/60 to-transparent">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-sm border border-white/10">
+                  <span class="w-2 h-2 rounded-full bg-medical-cyan flex-shrink-0"></span>
+                  <span class="text-[10px] font-bold tracking-wider text-white uppercase">Secure Archive Center</span>
+                </span>
+              </div>
+            </div>
+            <div class="h-48 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm relative group col-span-2">
+              <img src="assets/images/facility-gym.png" alt="Consultation Chambers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-slate-950/95 via-slate-950/60 to-transparent">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-sm border border-white/10">
+                  <span class="w-2 h-2 rounded-full bg-medical-blueLight flex-shrink-0"></span>
+                  <span class="text-xs font-bold tracking-wider text-white uppercase">Boston Consultation Chambers</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. CLIENT TESTIMONIALS ================= -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-900/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-semibold text-medical-cyan uppercase tracking-wider strict-subheading block mb-2">Client Feedback</span>
+          <h2 class="strict-heading text-3xl text-medical-navy dark:text-white mb-4">
+            Loved By Hundreds of Relocated Professionals
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Review 1 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-1 text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="strict-paragraph text-slate-600 dark:text-slate-400 italic text-xs mb-6">
+                "The client portal was super helpful. I could log in and check off my required Express Entry documents, keeping me on track between consultant reviews. Excellent firm."
+              </p>
+            </div>
+            <div class="flex items-center space-x-3 rtl:space-x-reverse border-t border-slate-100 dark:border-slate-800 pt-4">
+              <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-400"><i class="fa-solid fa-user text-xs"></i></div>
+              <div>
+                <h4 class="strict-heading text-xs text-medical-navy dark:text-white">Alex Johnson</h4>
+                <span class="text-[10px] text-slate-400 block">PR Visa Client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-1 text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="strict-paragraph text-slate-600 dark:text-slate-400 italic text-xs mb-6">
+                "Sarah Jenkins and the case management crew are an integrated force. My Express Entry application was a complete success and the transparent tracking kept me updated at every draw stage."
+              </p>
+            </div>
+            <div class="flex items-center space-x-3 rtl:space-x-reverse border-t border-slate-100 dark:border-slate-800 pt-4">
+              <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-400"><i class="fa-solid fa-user text-xs"></i></div>
+              <div>
+                <h4 class="strict-heading text-xs text-medical-navy dark:text-white">Marcus Vance Sr.</h4>
+                <span class="text-[10px] text-slate-400 block">Skilled Worker Client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center space-x-1 text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="strict-paragraph text-slate-600 dark:text-slate-400 italic text-xs mb-6">
+                "Their credential matching database identified an educational equivalency gap that was lowering my points. An additional certificate course alignment fixed my score completely."
+              </p>
+            </div>
+            <div class="flex items-center space-x-3 rtl:space-x-reverse border-t border-slate-100 dark:border-slate-800 pt-4">
+              <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-400"><i class="fa-solid fa-user text-xs"></i></div>
+              <div>
+                <h4 class="strict-heading text-xs text-medical-navy dark:text-white">Chloe Thompson</h4>
+                <span class="text-[10px] text-slate-400 block">PNP Visa Client</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 text-sm py-16 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        
+        <!-- Agency Info -->
+        <div>
+          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse mb-6">
+            <div class="w-8 h-8 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
+              <i class="fa-solid fa-passport"></i>
+            </div>
+            <span class="strict-heading text-lg text-medical-navy dark:text-white">Im Consult</span>
+          </a>
+          <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs leading-relaxed mb-6">
+            Professional visa consultation, credential assessments, and skilled worker migration processing to make relocation simple.
+          </p>
+          <div class="flex space-x-4 rtl:space-x-reverse">
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-twitter text-xs"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram text-xs"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-linkedin-in text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Home (Corporate)</a></li>
+            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Home (Pathways)</a></li>
+            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">About Our Firm</a></li>
+            <li><a href="eligibility-checker.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Eligibility Checker</a></li>
+            <li><a href="blog.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Advisory Blog</a></li>
+            <li><a href="dashboard.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Client Dashboard</a></li>
+          </ul>
+        </div>
+
+        <!-- Visa Streams -->
+        <div>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Visa Streams</h4>
+          <ul class="space-y-3">
+            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Canada Express Entry</a></li>
+            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">UK Skilled Worker Route</a></li>
+            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Australia Skilled Migration</a></li>
+            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Provincial Nominee Streams</a></li>
+            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Global Student Visas</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info & Helpline -->
+        <div>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Contact &amp; Support</h4>
+          <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-3">
+            104 Corporate Plaza, Suite 400, Boston, MA 02115
+          </p>
+          <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-4">
+            Email: contact@imconsult.com
+          </p>
+          <a href="tel:+15559117767" class="block w-full py-3 px-4 bg-rose-50 hover:bg-rose-100/70 text-rose-600 border border-rose-200 dark:bg-rose-950/40 dark:hover:bg-rose-900/40 dark:text-rose-400 dark:border-rose-800/60 rounded-xl text-center transition-all">
+            <span class="block text-xs strict-heading uppercase tracking-wider">Consultation Hotline</span>
+            <span class="text-sm font-semibold tracking-wide">+1 (555) 911-7767</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-slate-200 dark:border-slate-800/80 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-500">
+        <p class="strict-paragraph">&copy; 2026 Im Consult. All rights reserved.</p>
+        <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0">
+          <a href="#" class="hover:text-slate-800 dark:hover:text-slate-300 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-800 dark:hover:text-slate-300 transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Shared JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
