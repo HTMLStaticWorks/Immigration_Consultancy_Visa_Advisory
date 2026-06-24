@@ -85,10 +85,10 @@
   <div class="h-screen w-screen overflow-hidden flex flex-row relative">
     
     <!-- Mobile Sidebar Drawer Overlay -->
-    <div id="mobile-sidebar-overlay" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-30 transition-opacity duration-300 md:hidden"></div>
+    <div id="mobile-sidebar-overlay" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-30 transition-opacity duration-300 lg:hidden"></div>
 
     <!-- Left Sidebar (Desktop View / Mobile Drawer) -->
-    <aside id="portal-sidebar" class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 h-full flex flex-col p-6 z-40 transition-transform duration-300 transform -translate-x-full md:relative md:translate-x-0 flex-shrink-0">
+    <aside id="portal-sidebar" class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 h-full flex flex-col p-6 z-40 transition-transform duration-300 transform -translate-x-full lg:relative lg:translate-x-0 flex-shrink-0">
       
       <!-- Brand Logo -->
       <a href="index.html" class="flex items-center space-x-2.5 rtl:space-x-reverse mb-8 hover:opacity-90 transition-opacity group">
@@ -158,7 +158,7 @@
       <header class="h-20 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 flex items-center justify-between flex-shrink-0 z-10 transition-colors duration-300">
         <!-- Left: Mobile Menu Toggle / Panel Title -->
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
-          <button id="mobile-sidebar-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 md:hidden" aria-label="Toggle Navigation Drawer">
+          <button id="mobile-sidebar-toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 lg:hidden" aria-label="Toggle Navigation Drawer">
             <i class="fa-solid fa-bars text-xl"></i>
           </button>
           <h2 id="panel-title" class="strict-heading text-xl md:text-2xl text-slate-900 dark:text-white">Case Overview</h2>
@@ -167,26 +167,55 @@
         <!-- Right: Action Toggles & User Widget -->
         <div class="flex items-center space-x-3 md:space-x-4 rtl:space-x-reverse">
           
-          <!-- RTL Switcher -->
-          <button class="rtl-toggle-btn w-9 h-9 flex items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 shadow-sm border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-350">
+          <!-- RTL Switcher (hidden on mobile/tablet, shown lg+) -->
+          <button class="rtl-toggle-btn hidden lg:flex w-9 h-9 items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 shadow-sm border border-slate-200 dark:border-slate-700 text-xs font-semibold hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-350">
             RTL
           </button>
 
-          <!-- Theme Toggle -->
-          <button class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 shadow-sm border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-350" aria-label="Toggle Theme">
+          <!-- Theme Toggle (hidden on mobile/tablet, shown lg+) -->
+          <button class="theme-toggle-btn hidden lg:flex w-9 h-9 items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 shadow-sm border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-350" aria-label="Toggle Theme">
             <i class="fa-solid fa-moon"></i>
           </button>
 
-          <!-- User Widget -->
-          <div class="flex items-center space-x-3 rtl:space-x-reverse pl-3 border-l border-slate-200 dark:border-slate-800 rtl:border-l-0 rtl:border-r rtl:pl-0 rtl:pr-3">
+          <!-- User Widget (hidden on mobile/tablet, shown lg+) -->
+          <div class="hidden lg:flex items-center space-x-3 rtl:space-x-reverse pl-3 border-l border-slate-200 dark:border-slate-800 rtl:border-l-0 rtl:border-r rtl:pl-0 rtl:pr-3">
             <div class="hidden sm:block text-right">
               <p id="user-display-name" class="text-sm font-semibold text-slate-900 dark:text-white strict-subheading">Jacks Sprrow</p>
               <p id="user-display-stage" class="text-[10px] text-slate-500 dark:text-slate-400 strict-paragraph">Express Entry Applicant</p>
             </div>
             <img id="user-display-avatar" src="https://media.licdn.com/dms/image/v2/C5103AQFdeyFZ271LIA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516334711791?e=2147483647&v=beta&t=Z58KwUwnKOU3DxU1pohkHhGG1e4W5BzmQvZkXqVVop8" alt="Patient Avatar" class="w-10 h-10 rounded-xl object-cover bg-slate-100 dark:bg-slate-800 shadow-sm">
           </div>
+
+          <!-- Overflow Menu Button (visible on < lg: shown at 360px & 768px) -->
+          <button id="mobile-header-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="More options">
+            <i class="fa-solid fa-ellipsis-vertical text-xl"></i>
+          </button>
         </div>
       </header>
+
+      <!-- Header Dropdown Panel (shown at 360px & 768px via ⋮ button) -->
+      <div id="mobile-header-panel" class="hidden lg:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 py-4 space-y-3 z-10 flex-shrink-0">
+        <!-- User info row -->
+        <div class="flex items-center space-x-3 rtl:space-x-reverse pb-3 border-b border-slate-100 dark:border-slate-800">
+          <img src="https://media.licdn.com/dms/image/v2/C5103AQFdeyFZ271LIA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516334711791?e=2147483647&v=beta&t=Z58KwUwnKOU3DxU1pohkHhGG1e4W5BzmQvZkXqVVop8" alt="Patient Avatar" class="w-10 h-10 rounded-xl object-cover bg-slate-100 dark:bg-slate-800 shadow-sm flex-shrink-0">
+          <div>
+            <p id="mobile-user-name" class="text-sm font-semibold text-slate-900 dark:text-white strict-subheading">Jacks Sprrow</p>
+            <p id="mobile-user-stage" class="text-[10px] text-slate-500 dark:text-slate-400 strict-paragraph">Express Entry Applicant</p>
+          </div>
+        </div>
+        <!-- Controls row -->
+        <div class="flex items-center justify-between">
+          <span class="text-xs text-slate-500 dark:text-slate-400 font-medium strict-paragraph">Preferences</span>
+          <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
+            <button class="rtl-toggle-btn px-3 py-1.5 flex items-center justify-center rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+              RTL
+            </button>
+            <button class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 shadow-sm border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all" aria-label="Toggle Theme">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
 
       <!-- Scrollable Main Container -->
       <main id="portal-content" class="flex-grow p-6 md:p-8 overflow-y-auto space-y-8 bg-slate-50 dark:bg-medical-darkBg transition-colors duration-300">
@@ -1791,6 +1820,12 @@
       document.getElementById('user-display-name').textContent = currentUserActive.fullName || 'Jacks Sprrow';
       document.getElementById('user-display-stage').textContent = visaCat;
 
+      // Sync mobile header panel user info
+      const mobileUserName = document.getElementById('mobile-user-name');
+      const mobileUserStage = document.getElementById('mobile-user-stage');
+      if (mobileUserName) mobileUserName.textContent = currentUserActive.fullName || 'Jacks Sprrow';
+      if (mobileUserStage) mobileUserStage.textContent = visaCat;
+
       // 2. Initialize appointments list
       const savedAppts = localStorage.getItem('appointments');
       if (savedAppts) {
@@ -1866,6 +1901,15 @@
 
       if (toggleBtn) toggleBtn.addEventListener('click', openMobileDrawer);
       if (overlay) overlay.addEventListener('click', closeMobileDrawer);
+
+      // 4b. Mobile header overflow menu toggle
+      const mobileHeaderMenuBtn = document.getElementById('mobile-header-menu-btn');
+      const mobileHeaderPanel = document.getElementById('mobile-header-panel');
+      if (mobileHeaderMenuBtn && mobileHeaderPanel) {
+        mobileHeaderMenuBtn.addEventListener('click', () => {
+          mobileHeaderPanel.classList.toggle('hidden');
+        });
+      }
 
       // 5. Checkbox progress math calculations
       const checklist = document.querySelectorAll('.exercise-checkbox');

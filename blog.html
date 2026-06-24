@@ -108,7 +108,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           <!-- Left: Text Content -->
-          <div class="space-y-6">
+          <div class="space-y-6 flex flex-col items-center text-center">
             <!-- Label badge -->
             <span class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3 py-1.5 rounded-full bg-medical-teal/15 border border-medical-teal/25 text-medical-cyan">
               <i class="fa-solid fa-newspaper text-xs"></i>
@@ -123,40 +123,27 @@
             </p>
 
             <!-- Topic category pills -->
-            <div class="flex flex-wrap gap-3 pt-1">
-              <span class="inline-flex items-center space-x-1.5 rtl:space-x-reverse bg-slate-800/60 border border-slate-700/50 text-slate-300 px-3 py-1.5 rounded-lg text-xs strict-subheading">
-                <i class="fa-solid fa-passport text-medical-cyan text-xs"></i>
-                <span>Express Entry &amp; PR</span>
-              </span>
-              <span class="inline-flex items-center space-x-1.5 rtl:space-x-reverse bg-slate-800/60 border border-slate-700/50 text-slate-300 px-3 py-1.5 rounded-lg text-xs strict-subheading">
-                <i class="fa-solid fa-graduation-cap text-medical-cyan text-xs"></i>
-                <span>Study &amp; Work Permits</span>
-              </span>
-              <span class="inline-flex items-center space-x-1.5 rtl:space-x-reverse bg-slate-800/60 border border-slate-700/50 text-slate-300 px-3 py-1.5 rounded-lg text-xs strict-subheading">
-                <i class="fa-solid fa-house-chimney text-medical-cyan text-xs"></i>
-                <span>Settlement &amp; Integration</span>
-              </span>
-            </div>
+            
 
             <!-- Search hint CTA row -->
-            <div class="flex flex-wrap gap-4 pt-1">
-              <a href="#articles-container" class="px-6 py-3 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-sm strict-subheading transition-all duration-200 shadow-lg shadow-medical-blueLight/25">
+            <div class="flex flex-wrap justify-center gap-4 pt-1">
+              <a href="#articles-container" class="w-52 px-6 py-3 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-sm strict-subheading transition-all duration-200 shadow-lg shadow-medical-blueLight/25 text-center">
                 <i class="fa-solid fa-book-open mr-2"></i>Browse Articles
               </a>
-              <a href="contact.html" class="px-6 py-3 rounded-xl border border-slate-600 hover:border-slate-500 hover:bg-slate-800/60 text-slate-200 text-sm strict-subheading transition-all duration-200">
+              <a href="contact.html" class="w-52 px-6 py-3 rounded-xl border border-slate-600 hover:border-slate-500 hover:bg-slate-800/60 text-slate-200 text-sm strict-subheading transition-all duration-200 text-center">
                 Ask Our Experts
               </a>
             </div>
           </div>
 
           <!-- Right: Hero Image -->
-          <div class="relative hidden lg:block">
+          <div class="relative block mt-8 lg:mt-0">
             <!-- Glow frame -->
             <div class="absolute -inset-3 bg-gradient-to-br from-medical-teal/15 to-medical-blueLight/10 rounded-3xl blur-xl"></div>
             <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40">
               <img src="https://cdn.prod.website-files.com/63d7d217c3ede6e7696b3fc1/69f36edf5ab48fbe9365aaef_HR%20professional%20reviewing%20Spain%20ICT%20permit%20checklist%20and%20corporate%20transfer%20documents.webp"
                    alt="Im Consult advisory team discussing immigration cases"
-                   class="w-full h-[360px] object-cover object-center">
+                   class="w-full h-[240px] sm:h-[300px] md:h-[420px] lg:h-[360px] object-cover object-center">
               <!-- Bottom gradient fade -->
               <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
               <!-- Floating badge -->
@@ -188,24 +175,24 @@
           <!-- Fast Category Buttons -->
           <div class="flex flex-wrap gap-2" id="category-filters">
             <button data-cat="all" class="cat-filter-btn px-4 py-2 rounded-lg bg-medical-blueLight text-white text-xs strict-subheading transition-colors">All Articles</button>
-            <button data-cat="pr" class="cat-filter-btn px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs strict-subheading transition-colors">PR Pathways</button>
-            <button data-cat="study-work" class="cat-filter-btn px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs strict-subheading transition-colors">Study &amp; Work</button>
-            <button data-cat="business" class="cat-filter-btn px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs strict-subheading transition-colors">Business Visa</button>
-            <button data-cat="news" class="cat-filter-btn px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs strict-subheading transition-colors">Visa News</button>
+            <button data-cat="all" class="cat-filter-btn px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs strict-subheading transition-colors">PR Pathways</button>
+            <button data-cat="all" class="cat-filter-btn px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs strict-subheading transition-colors">Study &amp; Work</button>
+            <button data-cat="all" class="cat-filter-btn px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs strict-subheading transition-colors">Business Visa</button>
+            <button data-cat="all" class="cat-filter-btn px-4 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs strict-subheading transition-colors">Visa News</button>
           </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 flex flex-col lg:flex-row lg:block">
           
           <!-- Articles Grid (Cols 1-3) -->
-          <div class="lg:col-span-3 space-y-8">
+          <div class="lg:col-span-3 space-y-8 order-2 lg:order-1">
             
             <div id="articles-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
               
               <!-- Article 1 -->
               <article class="article-card bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group" data-category="pr">
-                <div class="h-48 overflow-hidden relative">
-                  <img src="assets/images/service-sports-med.png" alt="Express Entry pathway document guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-72 overflow-hidden relative">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZeosNfRfE3dM8OxZyplLbKN3fJRyWB7WqfG-OwFkMBRt7Dz0fU2QxmWpU&s=10" alt="Express Entry pathway document guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                   <div class="flex items-center space-x-2 rtl:space-x-reverse mb-3">
@@ -227,8 +214,8 @@
 
               <!-- Article 2 -->
               <article class="article-card bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group" data-category="study-work">
-                <div class="h-48 overflow-hidden relative">
-                  <img src="assets/images/service-sport-rehab.png" alt="International student graduation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-72 overflow-hidden relative">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVo0eH0Tttcrl6m5tMJGq_JIQeYdbqC4wekItGoTgDOCcEzfsqnnTHzik&s=10" alt="International student graduation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                   <div class="flex items-center space-x-2 rtl:space-x-reverse mb-3">
@@ -250,8 +237,8 @@
 
               <!-- Article 3 -->
               <article class="article-card bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group" data-category="business">
-                <div class="h-48 overflow-hidden relative">
-                  <img src="assets/images/service-spine-care.png" alt="Business professional relocation consulting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-72 overflow-hidden relative">
+                  <img src="https://londonimageinstitute.com/wp-content/uploads/2020/08/how-to-become-a-consultant.jpg" alt="Business professional relocation consulting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                   <div class="flex items-center space-x-2 rtl:space-x-reverse mb-3">
@@ -273,8 +260,8 @@
 
               <!-- Article 4 -->
               <article class="article-card bg-slate-50 dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow group" data-category="news">
-                <div class="h-48 overflow-hidden relative">
-                  <img src="assets/images/service-joint-care.png" alt="Language proficiency evaluation session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="h-72 overflow-hidden relative">
+                  <img src="https://static1.squarespace.com/static/5b97ed77365f02964fa72948/5e5453072136742b352d72eb/658b280815fe652a940a7c8f/1705499295942/language+proficiency.jpg?format=1500w" alt="Language proficiency evaluation session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                   <div class="flex items-center space-x-2 rtl:space-x-reverse mb-3">
@@ -313,7 +300,7 @@
           </div>
 
           <!-- Blog Categories Sidebar (Col 4) -->
-          <div class="space-y-8">
+          <div class="space-y-8 order-1 lg:order-2">
             
             <!-- Category Box -->
             <div class="p-6 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl">
@@ -396,15 +383,14 @@
           <!-- Story 1 -->
           <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col md:flex-row gap-6 hover:shadow-md transition-shadow h-full">
             <div class="w-48 h-48 mx-auto md:mx-0 rounded-2xl overflow-hidden shrink-0 relative bg-slate-100 dark:bg-slate-950">
-              <img src="assets/images/profile-marcus.png" alt="Client Relocation Portrait" class="w-full h-full object-cover">
-              <span class="absolute top-3 left-3 px-2 py-1 bg-medical-cyan text-white text-[9px] font-bold rounded uppercase tracking-wider">PR Approved</span>
+              <img src="https://media.licdn.com/dms/image/v2/D5603AQEcHtEPMGYMQw/profile-displayphoto-scale_400_400/B56Zr3NtLcL8Ag-/0/1765084157564?e=2147483647&v=beta&t=ZLDoS_82qEKQislCJCRNRzimdhQNUnDwEGHEiur2aOA" alt="Client Relocation Portrait" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col justify-between flex-grow">
               <div>
                 <span class="text-[10px] text-medical-teal font-semibold strict-subheading block mb-1">IT Consultant</span>
                 <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-2">Marcus Vance: Express Entry PR in 7 Months</h3>
                 <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-4">
-                  "After my initial consultation, I didn't think I'd meet the CRS cutoff. But the step-by-step document guidance and language prep recommendations helped me get my ITA."
+                  "After my guidance and language prep recommendations helped me get my ITA."
                 </p>
               </div>
               <div class="flex flex-col gap-1.5 border-t border-slate-100 dark:border-slate-800 pt-4 text-xs">
@@ -417,15 +403,14 @@
           <!-- Story 2 -->
           <div class="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-100 dark:border-slate-800 shadow-sm flex flex-col md:flex-row gap-6 hover:shadow-md transition-shadow h-full">
             <div class="w-48 h-48 mx-auto md:mx-0 rounded-2xl overflow-hidden shrink-0 relative bg-slate-100 dark:bg-slate-950">
-              <img src="assets/images/profile-jessica.png" alt="Client Relocation Portrait" class="w-full h-full object-cover">
-              <span class="absolute top-3 left-3 px-2 py-1 bg-medical-blueLight text-white text-[9px] font-bold rounded uppercase tracking-wider">Student &amp; Work</span>
+              <img src="https://media.licdn.com/dms/image/v2/D4D03AQHAwrUlMxw9dw/profile-displayphoto-scale_400_400/B4DZpuhSItJMAg-/0/1762790812987?e=2147483647&v=beta&t=9cJjIwRiHrRJY-5gv6VGcQIJxTnvnF1nf6sRLDRLrOQ" alt="Client Relocation Portrait" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col justify-between flex-grow">
               <div>
                 <span class="text-[10px] text-medical-teal font-semibold strict-subheading block mb-1">Data Analyst</span>
                 <h3 class="strict-heading text-lg text-medical-navy dark:text-white mb-2">Elena Rostova: Transitioning from Study to Work Visa</h3>
                 <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-4">
-                  "Managing study permit restrictions and working part-time was stressful. Im Consult guided me through the entire graduation permit process and subsequent employer support."
+                  "Managing study permit restrictions and working part-time was stressful."
                 </p>
               </div>
               <div class="flex flex-col gap-1.5 border-t border-slate-100 dark:border-slate-800 pt-4 text-xs">
@@ -453,13 +438,13 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="video-library-grid">
           
           <!-- Video Guide 1 -->
           <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300">
-            <div class="aspect-video w-full relative overflow-hidden border-b border-slate-100 dark:border-slate-800">
+            <div class="aspect-[3/2] w-full relative overflow-hidden border-b border-slate-100 dark:border-slate-800">
               <!-- Thumbnail Image -->
-              <img src="assets/images/video-acl-graft.png" alt="Express Entry setup video thumbnail" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="https://www.estaca.fr/wp-content/uploads/Actus/Actu-2024-international-langues.jpg" alt="Express Entry setup video thumbnail" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <!-- Dark overlay for video feel -->
               <div class="absolute inset-0 bg-slate-950/55 group-hover:bg-slate-950/45 transition-colors duration-300"></div>
               <!-- Play button -->
@@ -489,9 +474,9 @@
 
           <!-- Video Guide 2 -->
           <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300">
-            <div class="aspect-video w-full relative overflow-hidden border-b border-slate-100 dark:border-slate-800">
+            <div class="aspect-[3/2] w-full relative overflow-hidden border-b border-slate-100 dark:border-slate-800">
               <!-- Thumbnail Image -->
-              <img src="assets/images/video-knee-rehab.png" alt="IELTS preparation video thumbnail" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="https://www.megeve-tourisme.fr/app/uploads/iris-images/48096/adobestock-975630189-1920x1080-f50_50.webp" alt="IELTS preparation video thumbnail" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <!-- Dark overlay -->
               <div class="absolute inset-0 bg-slate-950/55 group-hover:bg-slate-950/45 transition-colors duration-300"></div>
               <!-- Play button -->
@@ -520,10 +505,10 @@
           </div>
 
           <!-- Video Guide 3 -->
-          <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300">
-            <div class="aspect-video w-full relative overflow-hidden border-b border-slate-100 dark:border-slate-800">
+          <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 overflow-hidden flex flex-col group hover:shadow-lg transition-all duration-300 md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto lg:col-span-1 lg:max-w-none lg:mx-0">
+            <div class="aspect-[3/2] w-full relative overflow-hidden border-b border-slate-100 dark:border-slate-800">
               <!-- Thumbnail Image -->
-              <img src="assets/images/video-spine-ergonomics.png" alt="Provincial Nominee Program video thumbnail" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2L_1DMthjhgh_vQYV-MWh0Qp6jZ6Lpy1wJdJrU1Hp3Q&s=10" alt="Provincial Nominee Program video thumbnail" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <!-- Dark overlay -->
               <div class="absolute inset-0 bg-slate-950/55 group-hover:bg-slate-950/45 transition-colors duration-300"></div>
               <!-- Play button -->
@@ -568,67 +553,75 @@
           </p>
         </div>
 
-        <div class="space-y-4">
-          
+        <div class="space-y-4" id="faq-accordion">
+
           <!-- FAQ 1 -->
-          <details class="group bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden" open>
-            <summary class="flex justify-between items-center p-6 cursor-pointer select-none">
+          <div class="faq-item bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left" aria-expanded="true">
               <span class="strict-heading text-base text-medical-navy dark:text-white">Do I need a job offer to apply for Express Entry?</span>
-              <span class="transition-transform group-open:rotate-180 text-medical-blueLight dark:text-medical-cyan">
+              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-transform duration-300">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
-              <p class="strict-paragraph">
-                No. Many Express Entry streams (like FSWP) do not require a job offer to submit a profile or receive an ITA. However, a verified offer adds valuable CRS points. Provincial Nominee Programs can also issue nominations without local job offers.
-              </p>
+            </button>
+            <div class="faq-body" style="overflow:hidden; transition: max-height 0.35s ease, padding 0.35s ease;">
+              <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
+                <p class="strict-paragraph">
+                  No. Many Express Entry streams (like FSWP) do not require a job offer to submit a profile or receive an ITA. However, a verified offer adds valuable CRS points. Provincial Nominee Programs can also issue nominations without local job offers.
+                </p>
+              </div>
             </div>
-          </details>
+          </div>
 
           <!-- FAQ 2 -->
-          <details class="group bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
-            <summary class="flex justify-between items-center p-6 cursor-pointer select-none">
+          <div class="faq-item bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left" aria-expanded="false">
               <span class="strict-heading text-base text-medical-navy dark:text-white">How long does the visa evaluation take?</span>
-              <span class="transition-transform group-open:rotate-180 text-medical-blueLight dark:text-medical-cyan">
+              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-transform duration-300">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
-              <p class="strict-paragraph">
-                A standard profile assessment takes approximately 45 to 60 minutes. Your initial roadmap consultation, where we build your points-boosting strategy, takes about 75 minutes.
-              </p>
+            </button>
+            <div class="faq-body" style="overflow:hidden; max-height:0; transition: max-height 0.35s ease;">
+              <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
+                <p class="strict-paragraph">
+                  A standard profile assessment takes approximately 45 to 60 minutes. Your initial roadmap consultation, where we build your points-boosting strategy, takes about 75 minutes.
+                </p>
+              </div>
             </div>
-          </details>
+          </div>
 
           <!-- FAQ 3 -->
-          <details class="group bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
-            <summary class="flex justify-between items-center p-6 cursor-pointer select-none">
+          <div class="faq-item bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left" aria-expanded="false">
               <span class="strict-heading text-base text-medical-navy dark:text-white">How many weeks does WES credential evaluation take?</span>
-              <span class="transition-transform group-open:rotate-180 text-medical-blueLight dark:text-medical-cyan">
+              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-transform duration-300">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
-              <p class="strict-paragraph">
-                Once WES receives all required university transcripts and documents directly from your home institution, the evaluation typically takes 4 to 6 weeks. We help guide this transcript sourcing process.
-              </p>
+            </button>
+            <div class="faq-body" style="overflow:hidden; max-height:0; transition: max-height 0.35s ease;">
+              <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
+                <p class="strict-paragraph">
+                  Once WES receives all required university transcripts and documents directly from your home institution, the evaluation typically takes 4 to 6 weeks. We help guide this transcript sourcing process.
+                </p>
+              </div>
             </div>
-          </details>
+          </div>
 
           <!-- FAQ 4 -->
-          <details class="group bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
-            <summary class="flex justify-between items-center p-6 cursor-pointer select-none">
+          <div class="faq-item bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left" aria-expanded="false">
               <span class="strict-heading text-base text-medical-navy dark:text-white">What documents should I prepare first?</span>
-              <span class="transition-transform group-open:rotate-180 text-medical-blueLight dark:text-medical-cyan">
+              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-transform duration-300">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
-            </summary>
-            <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
-              <p class="strict-paragraph">
-                You should prioritize scheduling your language exam (IELTS/CELPIP/TEF) and initiating your academic credentials assessment (ECA). These take the longest to process and form the baseline of your profile score.
-              </p>
+            </button>
+            <div class="faq-body" style="overflow:hidden; max-height:0; transition: max-height 0.35s ease;">
+              <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
+                <p class="strict-paragraph">
+                  You should prioritize scheduling your language exam (IELTS/CELPIP/TEF) and initiating your academic credentials assessment (ECA). These take the longest to process and form the baseline of your profile score.
+                </p>
+              </div>
             </div>
-          </details>
+          </div>
 
         </div>
       </div>
@@ -665,10 +658,10 @@
         <!-- Agency Info -->
         <div>
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse mb-6">
-            <div class="w-8 h-8 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
-              <i class="fa-solid fa-passport"></i>
+            <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
+              <i class="fa-solid fa-passport text-lg"></i>
             </div>
-            <span class="strict-heading text-lg text-medical-navy dark:text-white">Im Consult</span>
+            <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
           </a>
           <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs leading-relaxed mb-6">
             Expert immigration consulting, visa application management, and relocation advisory services to secure your pathway and ease your transition.
@@ -742,6 +735,43 @@
   <!-- Search & Filter Logic -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // ---- Custom FAQ Accordion ----
+      const faqItems = document.querySelectorAll('#faq-accordion .faq-item');
+
+      function openFaq(item) {
+        const body = item.querySelector('.faq-body');
+        const icon = item.querySelector('.faq-icon');
+        const trigger = item.querySelector('.faq-trigger');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+        trigger.setAttribute('aria-expanded', 'true');
+        item.setAttribute('data-open', 'true');
+      }
+
+      function closeFaq(item) {
+        const body = item.querySelector('.faq-body');
+        const icon = item.querySelector('.faq-icon');
+        const trigger = item.querySelector('.faq-trigger');
+        body.style.maxHeight = '0';
+        icon.style.transform = 'rotate(0deg)';
+        trigger.setAttribute('aria-expanded', 'false');
+        item.removeAttribute('data-open');
+      }
+
+      // Open first FAQ by default on page load
+      if (faqItems.length > 0) openFaq(faqItems[0]);
+
+      faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        trigger.addEventListener('click', () => {
+          const isOpen = item.hasAttribute('data-open');
+          // Close all first
+          faqItems.forEach(i => closeFaq(i));
+          // If it was closed, open it
+          if (!isOpen) openFaq(item);
+        });
+      });
+      // ---- End FAQ Accordion ----
       const searchInput = document.getElementById('search-input');
       const catButtons = document.querySelectorAll('.cat-filter-btn');
       const sidebarButtons = document.querySelectorAll('.sidebar-cat-btn');

@@ -98,34 +98,68 @@
   <main class="flex-grow">
 
     <!-- ================= 1. HERO SECTION ================= -->
-    <section class="relative bg-slate-900 py-20 lg:py-32 flex items-center">
-      <div class="absolute inset-0 bg-gradient-to-r from-medical-navy via-slate-900/90 to-transparent z-10"></div>
+    <section class="homepage-hero relative bg-slate-900 overflow-hidden pt-16 pb-12 sm:py-20 lg:py-32 flex flex-col justify-center items-center">
+      <!-- Background Overlay (only on desktop/tablet) -->
+      <div class="hidden sm:block sm:absolute sm:inset-0 sm:bg-slate-900/80 sm:z-10"></div>
       
       <!-- Background Image -->
-      <div class="absolute inset-0 w-full h-full">
-        <img src="assets/images/hero-home-2.png" alt="Visa Relocation Pathway" class="w-full h-full object-cover object-center transform scale-105 hover:scale-100 transition-transform duration-[6000ms]">
+      <div class="hidden sm:block sm:absolute sm:inset-0 sm:w-full sm:h-full sm:z-0">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjXHeyQnoh8ig1Fsj5aQzGkM2qqZ8QWdCXsRU7l3gaE3_V_ihik14XNDQ&s=10" alt="Visa Relocation Pathway" class="w-full h-full object-cover object-center transform scale-105 hover:scale-100 transition-transform duration-[6000ms]">
       </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
-        <div class="max-w-2xl text-left rtl:text-right">
-          <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3 py-1.5 rounded-full bg-medical-cyan/15 text-medical-cyan mb-6">
-            <span class="w-2 h-2 rounded-full bg-medical-cyan"></span>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full flex flex-col items-center">
+        <div class="max-w-3xl text-center flex flex-col items-center">
+          <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3 py-1.5 rounded-full bg-medical-cyan/15 text-medical-cyan mb-4">
+            <span class="w-2 h-2 rounded-full bg-medical-cyan animate-pulse"></span>
             <span class="text-xs uppercase tracking-wider strict-subheading">Structured Pathways &amp; Document Checklists</span>
           </div>
+
+          <!-- Rating Badge -->
+          <div class="flex items-center space-x-1.5 text-amber-400 mb-6">
+            <i class="fa-solid fa-star text-xs"></i>
+            <i class="fa-solid fa-star text-xs"></i>
+            <i class="fa-solid fa-star text-xs"></i>
+            <i class="fa-solid fa-star text-xs"></i>
+            <i class="fa-solid fa-star text-xs"></i>
+            <span class="text-slate-300 text-xs strict-subheading ml-1.5">4.9/5 Rating (2,400+ Success Cases)</span>
+          </div>
+
           <h1 class="strict-heading text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6">
             Relocate Faster, Build a Stronger Profile
           </h1>
-          <p class="strict-paragraph text-lg text-slate-300 mb-8 max-w-xl">
+          <p class="strict-paragraph text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
             Our regulated immigration advisory, custom credentials mapping, and transparent document checklists optimize your visa application journey.
           </p>
-          <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-            <a href="contact.html" class="px-8 py-4 rounded-lg bg-medical-blueLight hover:bg-medical-blue text-white text-center transition-all duration-300 shadow-md strict-subheading">
-              Book Strategy Consultation
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+            <a href="contact.html" class="w-64 px-8 py-4 rounded-lg bg-medical-blueLight hover:bg-medical-blue text-white text-center transition-all duration-300 shadow-md strict-subheading">
+              Book Consultation
             </a>
-            <a href="dashboard.html" class="px-8 py-4 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-white text-center border border-slate-700 transition-all duration-300 strict-subheading">
+            <a href="dashboard.html" class="w-64 px-8 py-4 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-white text-center border border-slate-700 transition-all duration-300 strict-subheading">
               Access Client Visa Portal
             </a>
           </div>
+
+          <!-- Highlight Columns -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-10 pt-8 border-t border-slate-700/50 w-full max-w-2xl text-slate-300">
+            <div class="flex items-center justify-center space-x-2 rtl:space-x-reverse">
+              <i class="fa-solid fa-circle-check text-medical-cyan text-sm flex-shrink-0"></i>
+              <span class="text-xs strict-subheading font-medium tracking-wide">97% Success Rate</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 rtl:space-x-reverse">
+              <i class="fa-solid fa-circle-check text-medical-cyan text-sm flex-shrink-0"></i>
+              <span class="text-xs strict-subheading font-medium tracking-wide">RCIC & MARA Regulated</span>
+            </div>
+            <div class="flex items-center justify-center space-x-2 rtl:space-x-reverse">
+              <i class="fa-solid fa-circle-check text-medical-cyan text-sm flex-shrink-0"></i>
+              <span class="text-xs strict-subheading font-medium tracking-wide">Real-time Portal Updates</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Separate Mobile Image (only visible on mobile below sm) -->
+        <div class="block sm:hidden relative w-full h-[220px] mt-8 rounded-2xl overflow-hidden border border-white/10 shadow-xl z-20">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjXHeyQnoh8ig1Fsj5aQzGkM2qqZ8QWdCXsRU7l3gaE3_V_ihik14XNDQ&s=10" alt="Visa Relocation Pathway" class="w-full h-full object-cover object-center">
+          <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-slate-950/80 to-transparent"></div>
         </div>
       </div>
     </section>
@@ -149,7 +183,7 @@
           <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-medical-blueLight/50 dark:hover:border-medical-cyan/50 hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden">
             <!-- Image Banner -->
             <div class="relative h-52 overflow-hidden">
-              <img src="assets/images/program-athletic-physio.png" alt="Skilled Migration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScMewn1eCWTkvxZaxldVj7g9Ymkbd0jw7trvKpnt_MgK-m-lRw2ZYzX8c&s=10" alt="Skilled Migration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
             </div>
             <!-- Content -->
@@ -165,7 +199,7 @@
           <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-medical-blueLight/50 dark:hover:border-medical-cyan/50 hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden">
             <!-- Image Banner -->
             <div class="relative h-52 overflow-hidden">
-              <img src="assets/images/program-musculoskeletal-rehab.png" alt="Permanent Residency" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMHvV0RtfYafA-oT1IiYIRJPYfaVRqztBtBgnxOhLAiMaIIHw9QNLE7TsP&s=10" alt="Permanent Residency" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
             </div>
             <!-- Content -->
@@ -181,7 +215,7 @@
           <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-medical-blueLight/50 dark:hover:border-medical-cyan/50 hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden">
             <!-- Image Banner -->
             <div class="relative h-52 overflow-hidden">
-              <img src="assets/images/program-post-operative-strength.png" alt="Post-Study Visas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rIFZEAzJtjB8q-qjAOaOUWSQyGJ_s3mjyMHL9_WXBlfJT9Gdg_fejqg&s=10" alt="Post-Study Visas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
             </div>
             <!-- Content -->
@@ -197,7 +231,7 @@
           <div class="rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 hover:border-medical-blueLight/50 dark:hover:border-medical-cyan/50 hover:shadow-xl transition-all duration-300 group flex flex-col overflow-hidden">
             <!-- Image Banner -->
             <div class="relative h-52 overflow-hidden">
-              <img src="assets/images/program-cardiorespiratory-fitness.png" alt="Intracompany Transfers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHWQE5cAFx6MpmrZZeiZefprpa3jw_rg3K5pfhFHK1quqeJxGPHv8p3tW&s=10" alt="Intracompany Transfers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
             </div>
             <!-- Content -->
@@ -350,7 +384,7 @@
           
           <!-- Showcase Image -->
           <div class="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
-            <img src="assets/images/facility-equipment.png" alt="Consultant Reviewing Documents" class="w-full h-auto object-cover">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTknqYTZF_C3OIlPVwSFPzJXWvYEqpolrMaeTragxHgYPr60MtZPVw7-I&s=10" alt="Consultant Reviewing Documents" class="w-full h-auto object-cover">
             <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-card text-slate-900 dark:text-white">
               <span class="text-xs uppercase font-semibold text-medical-blueLight dark:text-medical-cyan block mb-1">ECA Evaluation Center</span>
               <p class="strict-paragraph text-xs text-slate-600 dark:text-slate-300">Our backoffice team verifies university transcripts and indexes degrees against target immigration standard parameters.</p>
@@ -584,10 +618,10 @@
         <!-- Agency Info -->
         <div>
           <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse mb-6">
-            <div class="w-8 h-8 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
-              <i class="fa-solid fa-passport"></i>
+            <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
+              <i class="fa-solid fa-passport text-lg"></i>
             </div>
-            <span class="strict-heading text-lg text-medical-navy dark:text-white">Im Consult</span>
+            <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
           </a>
           <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs leading-relaxed mb-6">
             Professional visa consultation, credential assessments, and skilled worker migration processing to make relocation simple.

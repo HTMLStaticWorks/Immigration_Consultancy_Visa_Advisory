@@ -90,15 +90,28 @@ h1, h2, h3, .strict-heading {
   animation: fadeInUp 0.4s ease forwards;
 }
 
-/* Center orphaned cards in the Conditions grid at lg (1024–1279px) */
-@media (min-width: 1024px) and (max-width: 1279px) {
+/* Center orphaned cards in the Conditions grid at md (768–1023px) and lg (1024–1279px) */
+@media (min-width: 768px) and (max-width: 1023px) {
   .conditions-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
   }
   .conditions-grid > * {
-    flex: 0 0 calc(33.33% - 16px);
+    flex: 0 0 calc(50% - 12px) !important;
+    max-width: calc(50% - 12px) !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .conditions-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .conditions-grid > * {
+    flex: 0 0 calc(33.333% - 16px) !important;
+    max-width: calc(33.333% - 16px) !important;
   }
 }
 
@@ -136,4 +149,11 @@ h1, h2, h3, .strict-heading {
 .dark .text-slate-800,
 .dark .dark\:text-slate-800 {
   color: #f8fafc !important; /* slate-50 */
+}
+
+/* Homepage Hero Height adjustment for 1440px+ screens */
+@media (min-width: 1440px) {
+  .homepage-hero {
+    min-height: 720px !important;
+  }
 }
