@@ -557,13 +557,13 @@
 
           <!-- FAQ 1 -->
           <div class="faq-item bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
-            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left" aria-expanded="true">
+            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors duration-200 group/faq" aria-expanded="false">
               <span class="strict-heading text-base text-medical-navy dark:text-white">Do I need a job offer to apply for Express Entry?</span>
-              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-transform duration-300">
+              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-all duration-300 w-8 h-8 rounded-full flex items-center justify-center group-hover/faq:bg-medical-blueLight/10 group-hover/faq:scale-110">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
             </button>
-            <div class="faq-body" style="overflow:hidden; transition: max-height 0.35s ease, padding 0.35s ease;">
+            <div class="faq-body" style="overflow:hidden; max-height:0; transition: max-height 0.35s ease;">
               <div class="px-6 pb-6 text-sm text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-4">
                 <p class="strict-paragraph">
                   No. Many Express Entry streams (like FSWP) do not require a job offer to submit a profile or receive an ITA. However, a verified offer adds valuable CRS points. Provincial Nominee Programs can also issue nominations without local job offers.
@@ -574,9 +574,9 @@
 
           <!-- FAQ 2 -->
           <div class="faq-item bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
-            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left" aria-expanded="false">
+            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors duration-200 group/faq" aria-expanded="false">
               <span class="strict-heading text-base text-medical-navy dark:text-white">How long does the visa evaluation take?</span>
-              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-transform duration-300">
+              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-all duration-300 w-8 h-8 rounded-full flex items-center justify-center group-hover/faq:bg-medical-blueLight/10 group-hover/faq:scale-110">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
             </button>
@@ -591,9 +591,9 @@
 
           <!-- FAQ 3 -->
           <div class="faq-item bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
-            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left" aria-expanded="false">
+            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors duration-200 group/faq" aria-expanded="false">
               <span class="strict-heading text-base text-medical-navy dark:text-white">How many weeks does WES credential evaluation take?</span>
-              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-transform duration-300">
+              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-all duration-300 w-8 h-8 rounded-full flex items-center justify-center group-hover/faq:bg-medical-blueLight/10 group-hover/faq:scale-110">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
             </button>
@@ -608,9 +608,9 @@
 
           <!-- FAQ 4 -->
           <div class="faq-item bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-xl overflow-hidden">
-            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left" aria-expanded="false">
+            <button class="faq-trigger w-full flex justify-between items-center p-6 cursor-pointer text-left hover:bg-slate-50 dark:hover:bg-slate-800/60 transition-colors duration-200 group/faq" aria-expanded="false">
               <span class="strict-heading text-base text-medical-navy dark:text-white">What documents should I prepare first?</span>
-              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-transform duration-300">
+              <span class="faq-icon flex-shrink-0 ml-4 text-medical-blueLight dark:text-medical-cyan transition-all duration-300 w-8 h-8 rounded-full flex items-center justify-center group-hover/faq:bg-medical-blueLight/10 group-hover/faq:scale-110">
                 <i class="fa-solid fa-chevron-down"></i>
               </span>
             </button>
@@ -757,9 +757,6 @@
         trigger.setAttribute('aria-expanded', 'false');
         item.removeAttribute('data-open');
       }
-
-      // Open first FAQ by default on page load
-      if (faqItems.length > 0) openFaq(faqItems[0]);
 
       faqItems.forEach(item => {
         const trigger = item.querySelector('.faq-trigger');
