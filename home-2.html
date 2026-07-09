@@ -25,11 +25,9 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- Agency Logo -->
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse flex-shrink-0">
-          <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
-            <i class="fa-solid fa-passport text-lg"></i>
-          </div>
-          <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse flex-shrink-0">
+          <img src="assets/images/logo-light.svg" class="h-10 w-auto dark:hidden" alt="Im Consult Logo">
+          <img src="assets/images/logo-dark.svg" class="h-10 w-auto hidden dark:block" alt="Im Consult Logo">
         </a>
 
         <!-- Desktop Navigation -->
@@ -293,6 +291,15 @@
           </div>
 
         </div>
+
+        <!-- Next-Step CTA -->
+        <div class="mt-12 flex justify-center">
+          <a href="contact.html" class="inline-flex items-center space-x-2 px-8 py-4 rounded-xl bg-medical-blueLight text-white hover:bg-medical-blue strict-subheading transition-all duration-300 transform hover:-translate-y-0.5 shadow-md shadow-medical-blueLight/25">
+            <span>Book a Specialized Strategy Session</span>
+            <i class="fa-solid fa-calendar-days text-sm"></i>
+          </a>
+        </div>
+
       </div>
     </section>
 
@@ -358,10 +365,12 @@
               <p class="strict-paragraph text-slate-400 text-xs">Candidates who relocated successfully using our tracks.</p>
             </div>
 
-            <div class="p-6 bg-white dark:bg-slate-950 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm text-center">
-              <span class="text-4xl strict-heading text-medical-teal block mb-2">14 Days</span>
-              <h4 class="strict-heading text-sm text-slate-700 dark:text-slate-300 mb-1">Faster Submission</h4>
-              <p class="strict-paragraph text-slate-400 text-xs">Average prep speed increase using our dynamic checklists.</p>
+            <!-- Highlighted 14 Days Card -->
+            <div class="p-6 bg-gradient-to-br from-medical-blueLight to-medical-blue text-white rounded-xl border border-medical-cyan/30 shadow-lg shadow-medical-blueLight/20 text-center relative overflow-hidden transform md:scale-105 z-10 ring-2 ring-medical-cyan">
+              <div class="absolute -top-3 -right-3 opacity-15 text-7xl pointer-events-none"><i class="fa-solid fa-bolt"></i></div>
+              <span class="text-4xl strict-heading text-white block mb-2">14 Days</span>
+              <h4 class="strict-heading text-sm text-medical-cyan mb-1 font-bold">Faster Submission</h4>
+              <p class="strict-paragraph text-slate-100 text-xs leading-normal">Average prep speed increase using our dynamic checklists.</p>
             </div>
 
             <div class="p-6 bg-white dark:bg-slate-950 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm text-center col-span-2">
@@ -382,12 +391,12 @@
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          <!-- Showcase Image -->
-          <div class="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTknqYTZF_C3OIlPVwSFPzJXWvYEqpolrMaeTragxHgYPr60MtZPVw7-I&s=10" alt="Consultant Reviewing Documents" class="w-full h-auto object-cover">
-            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-card text-slate-900 dark:text-white">
-              <span class="text-xs uppercase font-semibold text-medical-blueLight dark:text-medical-cyan block mb-1">ECA Evaluation Center</span>
-              <p class="strict-paragraph text-xs text-slate-600 dark:text-slate-300">Our backoffice team verifies university transcripts and indexes degrees against target immigration standard parameters.</p>
+          <!-- Showcase Image (Task 4) -->
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 dark:border-slate-800/80 group">
+            <img src="assets/images/pathway-optimization.png" alt="Visa Advisory Panel" class="w-full h-[400px] object-cover object-center group-hover:scale-102 transition-transform duration-500">
+            <div class="absolute bottom-4 left-4 right-4 p-5 rounded-xl glass-card text-slate-900 dark:text-white border border-white/20 dark:border-slate-800/80 shadow-lg">
+              <span class="text-xs uppercase font-bold text-medical-blueLight dark:text-medical-cyan block mb-1">Credential Assessment Center</span>
+              <p class="strict-paragraph text-xs text-slate-600 dark:text-slate-300 leading-normal">Our backoffice team verifies global transcripts and indexes degrees against international qualification standards.</p>
             </div>
           </div>
 
@@ -407,7 +416,7 @@
                   <i class="fa-solid fa-calculator"></i>
                 </div>
                 <div>
-                  <h4 class="strict-heading text-base text-medical-navy dark:text-white">CRS Points Simulator</h4>
+                  <h4 class="strict-heading text-base text-medical-navy dark:text-white">Points-Based Visa Simulator</h4>
                   <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs mt-1">
                     Detailed age, education, and language profile calculations to maximize candidate pool rankings.
                   </p>
@@ -419,9 +428,9 @@
                   <i class="fa-solid fa-map-location-dot"></i>
                 </div>
                 <div>
-                  <h4 class="strict-heading text-base text-medical-navy dark:text-white">PNP Nomination Matrix</h4>
+                  <h4 class="strict-heading text-base text-medical-navy dark:text-white">Regional Nomination Matrix</h4>
                   <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs mt-1">
-                    Continuous matching against regional provincial demands to locate express-track PNP notifications.
+                    Continuous matching against regional and state demands to identify express-track nominations.
                   </p>
                 </div>
               </div>
@@ -431,7 +440,7 @@
                   <i class="fa-solid fa-graduation-cap"></i>
                 </div>
                 <div>
-                  <h4 class="strict-heading text-base text-medical-navy dark:text-white">ECA Equivalency Database</h4>
+                  <h4 class="strict-heading text-base text-medical-navy dark:text-white">Degree Equivalency Database</h4>
                   <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs mt-1">
                     Immediate comparison of global educational degrees to verify credentials points prior to official assessment submissions.
                   </p>
@@ -617,11 +626,9 @@
         
         <!-- Agency Info -->
         <div>
-          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse mb-6">
-            <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
-              <i class="fa-solid fa-passport text-lg"></i>
-            </div>
-            <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse mb-6">
+            <img src="assets/images/logo-light.svg" class="h-10 w-auto dark:hidden" alt="Im Consult Logo">
+            <img src="assets/images/logo-dark.svg" class="h-10 w-auto hidden dark:block" alt="Im Consult Logo">
           </a>
           <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs leading-relaxed mb-6">
             Professional visa consultation, credential assessments, and skilled worker migration processing to make relocation simple.

@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const applyTheme = (theme) => {
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
       localStorage.setItem('theme', 'dark');
       themeToggleBtns.forEach(btn => {
         btn.innerHTML = `
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
       });
     } else {
+      document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
       themeToggleBtns.forEach(btn => {

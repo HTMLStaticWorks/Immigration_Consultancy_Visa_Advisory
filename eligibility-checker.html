@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visa Eligibility Checker | Im Consult</title>
-  <meta name="description" content="Use Im Consult's interactive destination evaluator to check visa options, point scores, language benchmarks, WES credential checks, and processing timelines.">
+  <meta name="description"
+    content="Use Im Consult's interactive destination evaluator to check visa options, point scores, language benchmarks, WES credential checks, and processing timelines.">
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="shortcut icon" href="assets/images/favicon.svg">
@@ -17,51 +19,67 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-medical-darkBg dark:text-medical-darkText min-h-screen flex flex-col transition-colors duration-300">
+
+<body
+  class="bg-slate-50 text-slate-800 dark:bg-medical-darkBg dark:text-medical-darkText min-h-screen flex flex-col transition-colors duration-300">
 
   <!-- ================= STICKY HEADER ================= -->
-  <header id="sticky-header" class="sticky top-0 w-full z-50 bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800/80 transition-all duration-300">
+  <header id="sticky-header"
+    class="sticky top-0 w-full z-50 bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800/80 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 xl:px-8">
       <div class="flex items-center justify-between h-20">
-        
-        <!-- Clinic Logo -->
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse flex-shrink-0">
-          <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
-            <i class="fa-solid fa-passport text-lg"></i>
-          </div>
-          <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
+
+        <!-- Agency Logo -->
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse flex-shrink-0">
+          <img src="assets/images/logo-light.svg" class="h-10 w-auto dark:hidden" alt="Im Consult Logo">
+          <img src="assets/images/logo-dark.svg" class="h-10 w-auto hidden dark:block" alt="Im Consult Logo">
         </a>
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center space-x-5 xl:space-x-8 rtl:space-x-reverse flex-shrink-0">
-          <a href="index.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Home</a>
-          <a href="home-2.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Home 2</a>
-          <a href="about.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">About</a>
-          <a href="eligibility-checker.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Eligibility Checker</a>
-          <a href="blog.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Blog</a>
-          <a href="contact.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Contact</a>
-          <a href="dashboard.html" class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Dashboard</a>
+          <a href="index.html"
+            class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Home</a>
+          <a href="home-2.html"
+            class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Home
+            2</a>
+          <a href="about.html"
+            class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">About</a>
+          <a href="eligibility-checker.html"
+            class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Eligibility
+            Checker</a>
+          <a href="blog.html"
+            class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Blog</a>
+          <a href="contact.html"
+            class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Contact</a>
+          <a href="dashboard.html"
+            class="nav-link whitespace-nowrap text-slate-600 dark:text-slate-300 hover:text-medical-blueLight dark:hover:text-medical-cyan transition-colors strict-subheading py-2">Dashboard</a>
         </nav>
 
         <!-- Header Right side Controls -->
         <div class="hidden lg:flex items-center space-x-3 xl:space-x-4 rtl:space-x-reverse flex-shrink-0">
-          <button class="rtl-toggle-btn w-10 h-10 flex items-center justify-center rounded-lg text-xs font-semibold uppercase tracking-wider border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors">
+          <button
+            class="rtl-toggle-btn w-10 h-10 flex items-center justify-center rounded-lg text-xs font-semibold uppercase tracking-wider border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors">
             RTL
           </button>
-          
-          <button class="theme-toggle-btn w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors" aria-label="Toggle Theme">
+
+          <button
+            class="theme-toggle-btn w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-colors"
+            aria-label="Toggle Theme">
             <i class="fa-solid fa-moon"></i>
           </button>
 
           <!-- Sign Up CTA -->
-          <a href="signup.html" class="px-3 xl:px-5 py-2.5 rounded-lg bg-medical-blueLight text-white hover:bg-medical-blue transition-all duration-300 shadow-sm text-sm strict-subheading whitespace-nowrap">
+          <a href="signup.html"
+            class="px-3 xl:px-5 py-2.5 rounded-lg bg-medical-blueLight text-white hover:bg-medical-blue transition-all duration-300 shadow-sm text-sm strict-subheading whitespace-nowrap">
             Sign Up
           </a>
         </div>
 
         <!-- Mobile Hamburg Trigger -->
         <div class="flex items-center space-x-2 rtl:space-x-reverse lg:hidden">
-          <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle Mobile Menu">
+          <button id="mobile-menu-btn"
+            class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
+            aria-label="Toggle Mobile Menu">
             <i class="fa-solid fa-bars text-xl"></i>
           </button>
         </div>
@@ -70,24 +88,39 @@
     </div>
 
     <!-- Mobile Drawer menu container -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 pt-2 pb-6 space-y-2">
-      <a href="index.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Home</a>
-      <a href="home-2.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Home 2</a>
-      <a href="about.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">About</a>
-      <a href="eligibility-checker.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Eligibility Checker</a>
-      <a href="blog.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Blog</a>
-      <a href="contact.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Contact</a>
-      <a href="dashboard.html" class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Dashboard</a>
-      <a href="signup.html" class="block w-full text-center px-4 py-2.5 rounded-lg bg-medical-blueLight text-white strict-subheading mt-4">Sign Up</a>
+    <div id="mobile-menu"
+      class="hidden lg:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html"
+        class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Home</a>
+      <a href="home-2.html"
+        class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Home
+        2</a>
+      <a href="about.html"
+        class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">About</a>
+      <a href="eligibility-checker.html"
+        class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Eligibility
+        Checker</a>
+      <a href="blog.html"
+        class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Blog</a>
+      <a href="contact.html"
+        class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Contact</a>
+      <a href="dashboard.html"
+        class="nav-link block px-3 py-2 rounded-md text-base text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 strict-subheading">Dashboard</a>
+      <a href="signup.html"
+        class="block w-full text-center px-4 py-2.5 rounded-lg bg-medical-blueLight text-white strict-subheading mt-4">Sign
+        Up</a>
 
       <!-- Mobile Preferences Controls Row -->
       <div class="flex items-center justify-between px-3 pt-4 border-t border-slate-100 dark:border-slate-800/80 mt-4">
         <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Preferences</span>
         <div class="flex items-center space-x-2.5 rtl:space-x-reverse">
-          <button class="rtl-toggle-btn px-3 py-1.5 flex items-center justify-center rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+          <button
+            class="rtl-toggle-btn px-3 py-1.5 flex items-center justify-center rounded-lg text-xs font-semibold border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
             RTL
           </button>
-          <button class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle Theme">
+          <button
+            class="theme-toggle-btn w-9 h-9 flex items-center justify-center rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            aria-label="Toggle Theme">
             <i class="fa-solid fa-moon"></i>
           </button>
         </div>
@@ -97,13 +130,17 @@
 
   <!-- ================= MAIN CONTAINER ================= -->
   <main class="flex-grow">
-    
+
     <!-- Hero Banner section -->
-    <section class="relative bg-gradient-to-br from-medical-navy via-slate-900 to-slate-950 text-white overflow-hidden min-h-[480px] flex items-center">
+    <section
+      class="relative bg-gradient-to-br from-medical-navy via-slate-900 to-slate-950 text-white overflow-hidden min-h-[480px] flex items-center">
       <!-- Background dot pattern -->
-      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+      <div
+        class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none">
+      </div>
       <!-- Decorative glow -->
-      <div class="absolute bottom-0 right-1/3 w-80 h-80 bg-medical-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 right-1/3 w-80 h-80 bg-medical-cyan/10 rounded-full blur-3xl pointer-events-none">
+      </div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -111,7 +148,8 @@
           <!-- Left: Text Content -->
           <div class="space-y-6 flex flex-col items-center text-center">
             <!-- Pulse badge -->
-            <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3 py-1.5 rounded-full bg-medical-cyan/15 border border-medical-cyan/25 text-medical-cyan">
+            <div
+              class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3 py-1.5 rounded-full bg-medical-cyan/15 border border-medical-cyan/25 text-medical-cyan">
               <span class="w-2 h-2 rounded-full bg-medical-cyan animate-pulse"></span>
               <span class="text-xs uppercase tracking-wider strict-subheading">Self-Evaluation Joint Map</span>
             </div>
@@ -120,18 +158,21 @@
               Interactive Visa Eligibility Evaluator
             </h1>
             <p class="strict-paragraph text-slate-300 text-base leading-relaxed max-w-lg">
-              Select key destinations on our interactive global map to check required points thresholds, language benchmarks, skills assessments, and average processing timelines.
+              Select key destinations on our interactive global map to check required points thresholds, language
+              benchmarks, skills assessments, and average processing timelines.
             </p>
 
             <!-- Feature pills -->
-            
+
 
             <!-- CTA buttons -->
             <div class="flex flex-wrap justify-center gap-4 pt-1">
-              <a href="#eligibility-checker-tool" class="w-60 px-6 py-3 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-sm strict-subheading transition-all duration-200 shadow-lg shadow-medical-blueLight/25 text-center">
+              <a href="#eligibility-checker-tool"
+                class="w-60 px-6 py-3 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-sm strict-subheading transition-all duration-200 shadow-lg shadow-medical-blueLight/25 text-center">
                 <i class="fa-solid fa-magnifying-glass mr-2"></i>Evaluate Eligibility Now
               </a>
-              <a href="contact.html" class="w-60 px-6 py-3 rounded-xl border border-slate-600 hover:border-slate-500 hover:bg-slate-800/60 text-slate-200 text-sm strict-subheading transition-all duration-200 text-center">
+              <a href="contact.html"
+                class="w-60 px-6 py-3 rounded-xl border border-slate-600 hover:border-slate-500 hover:bg-slate-800/60 text-slate-200 text-sm strict-subheading transition-all duration-200 text-center">
                 Book a Consultation
               </a>
             </div>
@@ -140,15 +181,18 @@
           <!-- Right: Hero Image -->
           <div class="relative block mt-8 lg:mt-0">
             <!-- Glow frame -->
-            <div class="absolute -inset-3 bg-gradient-to-br from-medical-cyan/15 to-medical-blueLight/10 rounded-3xl blur-xl"></div>
+            <div
+              class="absolute -inset-3 bg-gradient-to-br from-medical-cyan/15 to-medical-blueLight/10 rounded-3xl blur-xl">
+            </div>
             <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40">
               <img src="https://i.pinimg.com/736x/bf/22/32/bf2232c860dcf3c1f2e255bb075fad79.jpg"
-                   alt="Adviser demonstrating pathways on global migration map"
-                   class="w-full h-[240px] sm:h-[300px] md:h-[420px] lg:h-[360px] object-cover object-center">
+                alt="Adviser demonstrating pathways on global migration map"
+                class="w-full h-[240px] sm:h-[300px] md:h-[420px] lg:h-[360px] object-cover object-center">
               <!-- Bottom gradient fade -->
               <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
               <!-- Floating info badge -->
-              <div class="absolute bottom-4 left-4 flex items-center space-x-2 rtl:space-x-reverse bg-slate-950/75 backdrop-blur-sm border border-slate-700/50 px-3 py-1.5 rounded-full">
+              <div
+                class="absolute bottom-4 left-4 flex items-center space-x-2 rtl:space-x-reverse bg-slate-950/75 backdrop-blur-sm border border-slate-700/50 px-3 py-1.5 rounded-full">
                 <i class="fa-solid fa-shield-halved text-medical-cyan text-xs"></i>
                 <span class="text-xs text-slate-200 font-medium">Verified by regulated RCIC consultants</span>
               </div>
@@ -162,63 +206,83 @@
     <!-- Eligibility Evaluator Section -->
     <section id="eligibility-checker-tool" class="py-16 bg-white dark:bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           <!-- LEFT COLUMN: World Map Destination Selector Nodes (Col 1-5) -->
-          <div class="lg:col-span-5 p-6 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl flex flex-col items-center justify-center relative">
-            
-            <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-6 text-center">Click highlighted pins on the map:</h3>
-            
+          <div
+            class="lg:col-span-5 p-6 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl flex flex-col items-center justify-center relative">
+
+            <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-6 text-center">Click highlighted
+              pins on the map:</h3>
+
             <!-- Global Map Diagram -->
-            <div class="relative w-full h-[300px] bg-slate-100 dark:bg-slate-950 rounded-2xl flex items-center justify-center border border-slate-200/50 dark:border-slate-800 overflow-hidden">
-              
+            <div
+              class="relative w-full h-[300px] bg-slate-100 dark:bg-slate-950 rounded-2xl flex items-center justify-center border border-slate-200/50 dark:border-slate-800 overflow-hidden">
+
               <!-- Stylized World Map SVG -->
-              <svg class="w-[95%] h-5/6 text-slate-300/60 dark:text-slate-800/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.04)]" fill="currentColor" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                class="w-[95%] h-5/6 text-slate-300/60 dark:text-slate-800/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
+                fill="currentColor" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
                 <!-- North America -->
                 <path d="M 25,20 C 15,22 18,35 15,48 C 12,61 32,60 42,50 C 52,40 45,28 35,25 Z" />
                 <path d="M 52,25 C 55,20 62,35 55,42 C 48,49 45,35 52,25 Z" />
                 <!-- South America -->
-                <path d="M 55,68 C 50,78 62,95 65,115 C 68,135 80,130 82,118 C 84,106 72,92 78,82 C 84,72 70,64 55,68 Z" />
+                <path
+                  d="M 55,68 C 50,78 62,95 65,115 C 68,135 80,130 82,118 C 84,106 72,92 78,82 C 84,72 70,64 55,68 Z" />
                 <!-- Eurasia (Europe/Asia) -->
-                <path d="M 125,22 C 105,25 98,42 110,55 C 122,68 142,60 155,52 C 168,44 185,42 195,48 C 205,54 220,40 215,28 C 210,16 182,15 165,12 C 148,9 135,19 125,22 Z" />
+                <path
+                  d="M 125,22 C 105,25 98,42 110,55 C 122,68 142,60 155,52 C 168,44 185,42 195,48 C 205,54 220,40 215,28 C 210,16 182,15 165,12 C 148,9 135,19 125,22 Z" />
                 <!-- Southeast Asia -->
                 <path d="M 218,65 C 212,68 222,82 225,88 C 228,94 235,90 232,82 C 229,74 224,62 218,65 Z" />
                 <!-- Africa -->
-                <path d="M 125,68 C 120,78 128,98 135,108 C 142,118 155,110 160,100 C 165,90 158,80 152,75 C 146,70 130,58 125,68 Z" />
+                <path
+                  d="M 125,68 C 120,78 128,98 135,108 C 142,118 155,110 160,100 C 165,90 158,80 152,75 C 146,70 130,58 125,68 Z" />
                 <!-- Australia -->
                 <path d="M 230,105 C 225,110 235,125 248,128 C 261,131 268,120 262,110 C 256,100 235,100 230,105 Z" />
               </svg>
 
               <!-- Interactive Destination Node Points -->
               <!-- Canada Node (Default Selected) -->
-              <button onclick="selectJoint('canada')" id="node-canada" class="joint-node active-node absolute top-[22%] left-[20%] w-5 h-5 rounded-full bg-medical-cyan/30 border-2 border-medical-cyan flex items-center justify-center hover:scale-125 transition-transform" aria-label="Inspect Canada">
+              <button onclick="selectJoint('canada')" id="node-canada"
+                class="joint-node active-node absolute top-[22%] left-[20%] w-5 h-5 rounded-full bg-medical-cyan/30 border-2 border-medical-cyan flex items-center justify-center hover:scale-125 transition-transform"
+                aria-label="Inspect Canada">
                 <span class="w-2 h-2 rounded-full bg-medical-cyan animate-ping absolute"></span>
                 <span class="w-2 h-2 rounded-full bg-medical-cyan"></span>
               </button>
 
               <!-- US Node -->
-              <button onclick="selectJoint('us')" id="node-us" class="joint-node absolute top-[38%] left-[18%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform" aria-label="Inspect United States">
+              <button onclick="selectJoint('us')" id="node-us"
+                class="joint-node absolute top-[38%] left-[18%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform"
+                aria-label="Inspect United States">
                 <span class="w-2 h-2 rounded-full bg-medical-blueLight"></span>
               </button>
 
               <!-- UK Node -->
-              <button onclick="selectJoint('uk')" id="node-uk" class="joint-node absolute top-[20%] left-[45%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform" aria-label="Inspect United Kingdom">
+              <button onclick="selectJoint('uk')" id="node-uk"
+                class="joint-node absolute top-[20%] left-[45%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform"
+                aria-label="Inspect United Kingdom">
                 <span class="w-2 h-2 rounded-full bg-medical-blueLight"></span>
               </button>
 
               <!-- Germany Node -->
-              <button onclick="selectJoint('germany')" id="node-germany" class="joint-node absolute top-[28%] left-[49%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform" aria-label="Inspect Germany">
+              <button onclick="selectJoint('germany')" id="node-germany"
+                class="joint-node absolute top-[28%] left-[49%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform"
+                aria-label="Inspect Germany">
                 <span class="w-2 h-2 rounded-full bg-medical-blueLight"></span>
               </button>
 
               <!-- Singapore Node -->
-              <button onclick="selectJoint('singapore')" id="node-singapore" class="joint-node absolute top-[68%] left-[76%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform" aria-label="Inspect Singapore">
+              <button onclick="selectJoint('singapore')" id="node-singapore"
+                class="joint-node absolute top-[68%] left-[76%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform"
+                aria-label="Inspect Singapore">
                 <span class="w-2 h-2 rounded-full bg-medical-blueLight"></span>
               </button>
 
               <!-- Australia Node -->
-              <button onclick="selectJoint('australia')" id="node-australia" class="joint-node absolute top-[80%] left-[84%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform" aria-label="Inspect Australia">
+              <button onclick="selectJoint('australia')" id="node-australia"
+                class="joint-node absolute top-[80%] left-[84%] w-5 h-5 rounded-full bg-medical-blueLight/30 border-2 border-medical-blueLight flex items-center justify-center hover:scale-125 transition-transform"
+                aria-label="Inspect Australia">
                 <span class="w-2 h-2 rounded-full bg-medical-blueLight"></span>
               </button>
 
@@ -226,29 +290,40 @@
 
             <!-- Helper Text Legend -->
             <div class="mt-4 text-center text-[10px] text-slate-450 dark:text-slate-500">
-              <span class="inline-block w-2.5 h-2.5 rounded-full bg-medical-cyan border border-white mr-1.5 align-middle"></span>Active &bull;
-              <span class="inline-block w-2.5 h-2.5 rounded-full bg-medical-blueLight border border-white ml-2 mr-1.5 align-middle"></span>Available
+              <span
+                class="inline-block w-2.5 h-2.5 rounded-full bg-medical-cyan border border-white mr-1.5 align-middle"></span>Active
+              &bull;
+              <span
+                class="inline-block w-2.5 h-2.5 rounded-full bg-medical-blueLight border border-white ml-2 mr-1.5 align-middle"></span>Available
             </div>
 
           </div>
 
           <!-- RIGHT COLUMN: Eligibility Description & Pathway Details (Col 6-12) -->
           <div class="lg:col-span-7 space-y-6">
-            
-            <div class="p-6 md:p-8 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl shadow-sm space-y-6">
-              
+
+            <div
+              class="p-6 md:p-8 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl shadow-sm space-y-6">
+
               <!-- Target Title & Status Badge -->
               <div class="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800">
                 <div>
-                  <span class="text-[10px] text-medical-blueLight dark:text-medical-cyan uppercase tracking-widest font-semibold block mb-1 strict-subheading">Selected Region</span>
-                  <h2 id="joint-title" class="strict-heading text-2xl text-medical-navy dark:text-white font-semibold">Canada</h2>
+                  <span
+                    class="text-[10px] text-medical-blueLight dark:text-medical-cyan uppercase tracking-widest font-semibold block mb-1 strict-subheading">Selected
+                    Region</span>
+                  <h2 id="joint-title" class="strict-heading text-2xl text-medical-navy dark:text-white font-semibold">
+                    Canada</h2>
                 </div>
-                <span id="rehab-tier" class="px-3 py-1 bg-medical-cyan/10 text-medical-cyan text-xs font-semibold rounded-full strict-subheading">Popular Track</span>
+                <span id="rehab-tier"
+                  class="px-3 py-1 bg-medical-cyan/10 text-medical-cyan text-xs font-semibold rounded-full strict-subheading">Popular
+                  Track</span>
               </div>
 
               <!-- Common Visa Streams list -->
               <div class="space-y-3">
-                <h4 class="strict-heading text-xs text-slate-450 dark:text-slate-500 uppercase tracking-wider font-semibold">Common Visa Streams</h4>
+                <h4
+                  class="strict-heading text-xs text-slate-450 dark:text-slate-500 uppercase tracking-wider font-semibold">
+                  Common Visa Streams</h4>
                 <div id="injury-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <!-- JS Injects cards here -->
                 </div>
@@ -256,42 +331,55 @@
 
               <!-- Warning Indicators (Basic Requirements checklist) -->
               <div class="space-y-3">
-                <h4 class="strict-heading text-xs text-slate-450 dark:text-slate-500 uppercase tracking-wider font-semibold">Basic Eligibility Requirements</h4>
-                <ul id="symptoms-list" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-650 dark:text-slate-400">
+                <h4
+                  class="strict-heading text-xs text-slate-450 dark:text-slate-500 uppercase tracking-wider font-semibold">
+                  Basic Eligibility Requirements</h4>
+                <ul id="symptoms-list"
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-650 dark:text-slate-400">
                   <!-- JS Injects items -->
                 </ul>
               </div>
 
               <!-- Strategy Paths -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-slate-100 dark:border-slate-800">
-                
+
                 <div class="space-y-1.5">
-                  <span class="text-[10px] text-slate-450 uppercase tracking-wider block font-semibold strict-subheading">Standard Strategy</span>
+                  <span
+                    class="text-[10px] text-slate-450 uppercase tracking-wider block font-semibold strict-subheading">Standard
+                    Strategy</span>
                   <p id="surgical-path" class="text-xs text-slate-700 dark:text-slate-350 strict-paragraph">
                     Express Entry Federal Skilled Worker (FSW) or Canadian Experience Class (CEC) entry route.
                   </p>
                 </div>
 
                 <div class="space-y-1.5">
-                  <span class="text-[10px] text-slate-450 uppercase tracking-wider block font-semibold strict-subheading">Score Maximization</span>
+                  <span
+                    class="text-[10px] text-slate-450 uppercase tracking-wider block font-semibold strict-subheading">Score
+                    Maximization</span>
                   <p id="rehab-path" class="text-xs text-slate-700 dark:text-slate-350 strict-paragraph">
-                    Maximize CRS points via secondary language tests, credentials evaluations, or provincial nomination selections.
+                    Maximize CRS points via secondary language tests, credentials evaluations, or provincial nomination
+                    selections.
                   </p>
                 </div>
 
               </div>
 
               <!-- Recovery Timeline indicators -->
-              <div class="p-4 bg-slate-50 dark:bg-slate-950 rounded-2xl flex items-center justify-between border border-slate-100 dark:border-slate-800">
+              <div
+                class="p-4 bg-slate-50 dark:bg-slate-950 rounded-2xl flex items-center justify-between border border-slate-100 dark:border-slate-800">
                 <div class="flex items-center space-x-3.5 rtl:space-x-reverse">
                   <i class="fa-solid fa-clock-rotate-left text-medical-blueLight dark:text-medical-cyan text-xl"></i>
                   <div>
-                    <span class="text-[10px] text-slate-400 block font-semibold strict-subheading">Estimated Process Period</span>
-                    <span id="rehab-weeks" class="strict-heading text-sm text-slate-850 dark:text-slate-200 font-semibold">6 Months Average Process</span>
+                    <span class="text-[10px] text-slate-400 block font-semibold strict-subheading">Estimated Process
+                      Period</span>
+                    <span id="rehab-weeks"
+                      class="strict-heading text-sm text-slate-850 dark:text-slate-200 font-semibold">6 Months Average
+                      Process</span>
                   </div>
                 </div>
-                
-                <a id="consultation-link" href="signup.html" class="px-5 py-2.5 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-xs strict-subheading transition-colors shadow-sm font-semibold">
+
+                <a id="consultation-link" href="signup.html"
+                  class="px-5 py-2.5 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-xs strict-subheading transition-colors shadow-sm font-semibold">
                   Check Express Entry Eligibility
                 </a>
               </div>
@@ -308,30 +396,38 @@
     <!-- ================= COMMON VISAS QUICK REFERENCE ================= -->
     <section class="py-20 bg-slate-50 dark:bg-slate-900/40">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-xs font-semibold text-medical-cyan uppercase tracking-wider strict-subheading block mb-2">Program Directory</span>
+          <span
+            class="text-xs font-semibold text-medical-cyan uppercase tracking-wider strict-subheading block mb-2">Program
+            Directory</span>
           <h2 class="strict-heading text-3xl sm:text-4xl text-medical-navy dark:text-white mb-4">
             Common Visa Categories Quick Reference
           </h2>
           <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
-            Explore the most frequently submitted visa categories, their points structures, assessing bodies, and average processing windows.
+            Explore the most frequently submitted visa categories, their points structures, assessing bodies, and
+            average processing windows.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
+
           <!-- Visa Card 1 -->
-          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
               <div class="w-11 h-11 rounded-xl bg-red-500/10 text-red-500 flex items-center justify-center">
                 <i class="fa-solid fa-passport text-lg"></i>
               </div>
-              <span class="px-2.5 py-1 bg-red-500/10 text-red-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">High Points</span>
+              <span
+                class="px-2.5 py-1 bg-red-500/10 text-red-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">High
+                Points</span>
             </div>
             <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-2">Canada Skilled Worker (FSW)</h3>
             <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed flex-grow mb-4">
-              Permanent residency stream for international professionals under the Express Entry pool, assessed via the Comprehensive Ranking System (CRS) algorithm. Points are awarded based on age, education, English/French fluency, and work history.
+              Permanent residency stream for international professionals under the Express Entry pool, assessed via the
+              Comprehensive Ranking System (CRS) algorithm. Points are awarded based on age, education, English/French
+              fluency, and work history.
             </p>
             <div class="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2">
               <div class="flex items-center justify-between text-xs">
@@ -350,16 +446,19 @@
           </div>
 
           <!-- Visa Card 2 -->
-          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
               <div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center">
                 <i class="fa-solid fa-briefcase text-lg"></i>
               </div>
-              <span class="px-2.5 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Sponsored</span>
+              <span
+                class="px-2.5 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Sponsored</span>
             </div>
             <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-2">UK Skilled Worker Route</h3>
             <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed flex-grow mb-4">
-              Work permit sponsored by licensed UK employers. Candidates must obtain a Certificate of Sponsorship (CoS) matching local job codes, meet minimum salary limits, and pass English fluency assessments.
+              Work permit sponsored by licensed UK employers. Candidates must obtain a Certificate of Sponsorship (CoS)
+              matching local job codes, meet minimum salary limits, and pass English fluency assessments.
             </p>
             <div class="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2">
               <div class="flex items-center justify-between text-xs">
@@ -372,22 +471,25 @@
               </div>
               <div class="flex items-center justify-between text-xs">
                 <span class="text-slate-500 dark:text-slate-400 strict-subheading">Entry Basis</span>
-                <span class="text-medical-navy dark:text-white font-medium">Employer sponsorship required</span>
+                <span class="text-medical-navy dark:text-white font-medium">Employer sponsorship</span>
               </div>
             </div>
           </div>
 
           <!-- Visa Card 3 -->
-          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
               <div class="w-11 h-11 rounded-xl bg-red-500/10 text-red-500 flex items-center justify-center">
                 <i class="fa-solid fa-graduation-cap text-lg"></i>
               </div>
-              <span class="px-2.5 py-1 bg-red-500/10 text-red-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Educational</span>
+              <span
+                class="px-2.5 py-1 bg-red-500/10 text-red-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Educational</span>
             </div>
             <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-2">Australia Subclass 500</h3>
             <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed flex-grow mb-4">
-              Student visa for candidates admitted to accredited Australian academic institutions. Allows part-time work privileges and offers direct conversion opportunities to post-study Graduate visas (Subclass 485).
+              Student visa for candidates admitted to accredited Australian academic institutions. Allows part-time work
+              privileges and offers direct conversion opportunities to post-study Graduate visas (Subclass 485).
             </p>
             <div class="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2">
               <div class="flex items-center justify-between text-xs">
@@ -406,21 +508,25 @@
           </div>
 
           <!-- Visa Card 4 -->
-          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
               <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center">
                 <i class="fa-solid fa-plane text-lg"></i>
               </div>
-              <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Points Card</span>
+              <span
+                class="px-2.5 py-1 bg-emerald-500/10 text-emerald-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Points
+                Card</span>
             </div>
             <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-2">Germany Opportunity Card</h3>
             <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed flex-grow mb-4">
-              Chancenkarte points-based job seeker visa. Enables skilled candidates with recognized educational degrees and basic language proficiency to look for employment in Germany for up to one year.
+              Chancenkarte points-based job seeker visa. Enables skilled candidates with recognized educational degrees
+              and basic language proficiency to look for employment in Germany for up to one year.
             </p>
             <div class="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2">
               <div class="flex items-center justify-between text-xs">
                 <span class="text-slate-500 dark:text-slate-400 strict-subheading">Assessing Authority</span>
-                <span class="text-medical-navy dark:text-white font-medium">ZAB / German Embassy</span>
+                <span class="text-medical-navy dark:text-white font-medium">ZAB / German</span>
               </div>
               <div class="flex items-center justify-between text-xs">
                 <span class="text-slate-500 dark:text-slate-400 strict-subheading">Average Process</span>
@@ -434,16 +540,19 @@
           </div>
 
           <!-- Visa Card 5 -->
-          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
               <div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center">
                 <i class="fa-solid fa-map-pin text-lg"></i>
               </div>
-              <span class="px-2.5 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Provincial</span>
+              <span
+                class="px-2.5 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Provincial</span>
             </div>
             <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-2">Canada PNP Nominee Streams</h3>
             <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed flex-grow mb-4">
-              Province-specific nominations (OINP, BC PNP, SINP) targeting candidates with localized job offers or in-demand occupational backgrounds. Successful nomination awards 600 points on the Express Entry CRS grid.
+              Province-specific nominations (OINP, BC PNP, SINP) targeting candidates with localized job offers or
+              in-demand occupational backgrounds. Successful nomination awards 600 points on the Express Entry CRS grid.
             </p>
             <div class="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2">
               <div class="flex items-center justify-between text-xs">
@@ -456,22 +565,26 @@
               </div>
               <div class="flex items-center justify-between text-xs">
                 <span class="text-slate-500 dark:text-slate-400 strict-subheading">Entry Basis</span>
-                <span class="text-medical-navy dark:text-white font-medium">Provincial Nomination selection</span>
+                <span class="text-medical-navy dark:text-white font-medium">Provincial Nomination</span>
               </div>
             </div>
           </div>
 
           <!-- Visa Card 6 -->
-          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
+          <div
+            class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 p-6 flex flex-col hover:shadow-lg transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
               <div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center">
                 <i class="fa-solid fa-users text-lg"></i>
               </div>
-              <span class="px-2.5 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Highly Skilled</span>
+              <span
+                class="px-2.5 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-semibold rounded-full uppercase tracking-wider strict-subheading">Highly
+                Skilled</span>
             </div>
             <h3 class="strict-heading text-base text-medical-navy dark:text-white mb-2">Singapore Employment Pass</h3>
             <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed flex-grow mb-4">
-              Employment Pass (EP) for international professionals. Assessed under the COMPASS points framework measuring salary, credentials, candidate diversity, and local employment integration.
+              Employment Pass (EP) for international professionals. Assessed under the COMPASS points framework
+              measuring salary, credentials, candidate diversity, and local employment integration.
             </p>
             <div class="pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2">
               <div class="flex items-center justify-between text-xs">
@@ -496,98 +609,105 @@
     <!-- ================= IMMIGRATION ROADMAP SELECTOR ================= -->
     <section class="py-20 bg-white dark:bg-slate-950">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-xs font-semibold text-medical-teal uppercase tracking-wider strict-subheading block mb-2">Urgency Guide</span>
+          <span
+            class="text-xs font-semibold text-medical-teal uppercase tracking-wider strict-subheading block mb-2">Urgency
+            Guide</span>
           <h2 class="strict-heading text-3xl sm:text-4xl text-medical-navy dark:text-white mb-4">
             Select the Right Visa Pathway
           </h2>
           <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-sm">
-            Not all candidates follow the same path. Use this triage guide to understand if you qualify for immediate PR pool entries, require provincial nomination targets, or need long-term credentials building.
+            Not all candidates follow the same path. Use this triage guide to understand if you qualify for immediate PR
+            pool entries, require provincial nomination targets, or need long-term credentials building.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          
+
           <!-- Urgent Entry Tier -->
-          <div class="bg-red-500/5 dark:bg-red-500/10 rounded-2xl border border-red-200 dark:border-red-500/20 p-8 flex flex-col text-center items-center">
-            <div class="w-14 h-14 rounded-2xl bg-red-500/15 text-red-500 flex items-center justify-center mb-5">
+          <div class="bg-red-500/5 dark:bg-red-500/10 rounded-2xl border border-red-200 dark:border-red-500/20 p-8 flex flex-col text-left rtl:text-right">
+            <div class="w-14 h-14 rounded-2xl bg-red-500/15 text-red-500 flex items-center justify-center mb-5 self-start">
               <i class="fa-solid fa-bolt text-2xl"></i>
             </div>
-            <h3 class="strict-heading text-lg text-red-600 dark:text-red-400 mb-2">Immediate Entry — Direct PR Filings</h3>
-            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-6 flex-grow">
+            <h3 class="strict-heading text-lg text-red-600 dark:text-red-400 mb-3 min-h-[56px] flex items-center">Immediate Entry — Direct PR Filings</h3>
+            <p class="text-slate-650 dark:text-slate-400 text-xs leading-relaxed mb-6 min-h-[64px] flex items-center">
               File directly under skilled independent pathways if your baseline criteria already exceed draw thresholds.
             </p>
-            <ul class="space-y-2.5 text-left w-full">
+            <ul class="space-y-3.5 w-full pt-4 border-t border-slate-100 dark:border-slate-800">
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-check text-red-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">Language scores of IELTS CLB 9+ (8777)</span>
+                <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+                <span>Language scores of IELTS CLB 9+ (8777)</span>
               </li>
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-check text-red-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">ECA reports matching Master degrees or double qualifications</span>
+                <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+                <span>ECA reports matching Master degrees or double qualifications</span>
               </li>
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-check text-red-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">3+ years of continuous skilled foreign work experience</span>
+                <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+                <span>3+ years of continuous skilled foreign work experience</span>
               </li>
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-check text-red-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">Validated employer job offers (sponsorship certificates)</span>
+                <i class="fa-solid fa-circle-check text-red-500 mt-1 shrink-0"></i>
+                <span>Validated employer job offers (sponsorship certificates)</span>
               </li>
             </ul>
           </div>
 
           <!-- Standard Entry Tier -->
-          <div class="bg-amber-500/5 dark:bg-amber-500/10 rounded-2xl border border-amber-200 dark:border-amber-500/20 p-8 flex flex-col text-center items-center">
-            <div class="w-14 h-14 rounded-2xl bg-amber-500/15 text-amber-500 flex items-center justify-center mb-5">
+          <div class="bg-amber-500/5 dark:bg-amber-500/10 rounded-2xl border border-amber-200 dark:border-amber-500/20 p-8 flex flex-col text-left rtl:text-right">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/15 text-amber-500 flex items-center justify-center mb-5 self-start">
               <i class="fa-solid fa-clock text-2xl"></i>
             </div>
-            <h3 class="strict-heading text-lg text-amber-600 dark:text-amber-400 mb-2">Standard Profile — Provincial Nominee Targets</h3>
-            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-6 flex-grow">
+            <h3 class="strict-heading text-lg text-amber-600 dark:text-amber-400 mb-3 min-h-[56px] flex items-center">Standard Profile — Provincial Targets</h3>
+            <p class="text-slate-650 dark:text-slate-400 text-xs leading-relaxed mb-6 min-h-[64px] flex items-center">
               Submit profile to pools and target provincial nominations (PNP) or state nominations to secure selection.
             </p>
-            <ul class="space-y-2.5 text-left w-full">
+            <ul class="space-y-3.5 w-full pt-4 border-t border-slate-100 dark:border-slate-800">
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-exclamation text-amber-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">Language scores between CLB 7 and CLB 8</span>
+                <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 shrink-0"></i>
+                <span>Language scores between CLB 7 and CLB 8</span>
               </li>
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-exclamation text-amber-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">Occupational backgrounds matching regional target lists</span>
+                <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 shrink-0"></i>
+                <span>Occupational backgrounds matching regional target lists</span>
               </li>
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-exclamation text-amber-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">1-2 years of foreign work history (requires PNP boost)</span>
+                <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 shrink-0"></i>
+                <span>1-2 years of foreign work history (requires PNP boost)</span>
               </li>
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-exclamation text-amber-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">Education credentials assessed under Bachelor equivalency</span>
+                <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 shrink-0"></i>
+                <span>Education credentials assessed under Bachelor equivalency</span>
               </li>
             </ul>
           </div>
 
           <!-- Long-Term Tier -->
-          <div class="bg-emerald-500/5 dark:bg-emerald-500/10 rounded-2xl border border-emerald-200 dark:border-emerald-500/20 p-8 flex flex-col text-center items-center">
-            <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 text-emerald-500 flex items-center justify-center mb-5">
+          <div class="bg-emerald-500/5 dark:bg-emerald-500/10 rounded-2xl border border-emerald-200 dark:border-emerald-500/20 p-8 flex flex-col text-left rtl:text-right">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 text-emerald-500 flex items-center justify-center mb-5 self-start">
               <i class="fa-solid fa-list-check text-2xl"></i>
             </div>
-            <h3 class="strict-heading text-lg text-emerald-600 dark:text-emerald-400 mb-2">Profile Building — Educational Pathways</h3>
-            <p class="strict-paragraph text-slate-600 dark:text-slate-400 text-xs leading-relaxed mb-6 flex-grow">
+            <h3 class="strict-heading text-lg text-emerald-600 dark:text-emerald-400 mb-3 min-h-[56px] flex items-center">Profile Building — Pathways</h3>
+            <p class="text-slate-650 dark:text-slate-400 text-xs leading-relaxed mb-6 min-h-[64px] flex items-center">
               Build your points score by studying overseas, taking additional qualifications, or learning secondary languages (French/German).
             </p>
-            <ul class="space-y-2.5 text-left w-full">
+            <ul class="space-y-3.5 w-full pt-4 border-t border-slate-100 dark:border-slate-800">
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">Targeting student visas to gain local academic credentials</span>
+                <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                <span>Targeting student visas to gain local academic credentials</span>
               </li>
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">Enrolling in secondary language courses to optimize points</span>
+                <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                <span>Job offers (sponsorship certificates)</span>
               </li>
               <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
-                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0"></i>
-                <span class="strict-paragraph">Gaining additional years of skilled work experience locally</span>
+                <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                <span>Enrolling in secondary language courses to optimize points</span>
+              </li>
+              <li class="flex items-start space-x-2.5 rtl:space-x-reverse text-xs text-slate-700 dark:text-slate-300">
+                <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                <span>Gaining additional years of skilled work experience locally</span>
               </li>
             </ul>
           </div>
@@ -595,15 +715,19 @@
         </div>
 
         <!-- CTA Banner -->
-        <div class="bg-gradient-to-r from-medical-navy via-slate-900 to-medical-navy rounded-3xl p-8 md:p-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 border border-slate-800">
+        <div
+          class="bg-gradient-to-r from-medical-navy via-slate-900 to-medical-navy rounded-3xl p-8 md:p-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 border border-slate-800">
           <div class="flex-1">
-            <h3 class="strict-heading text-xl md:text-2xl text-white mb-2">Not sure about your visa eligibility score?</h3>
+            <h3 class="strict-heading text-xl md:text-2xl text-white mb-2">Not sure about your visa eligibility score?
+            </h3>
             <p class="strict-paragraph text-slate-400 text-sm max-w-lg">
-              Our regulated immigration consultants can evaluate your qualifications and map out the right strategy to maximize your selection chances.
+              Our regulated immigration consultants can evaluate your qualifications and map out the right strategy to
+              maximize your selection chances.
             </p>
           </div>
           <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto shrink-0">
-            <a href="contact.html" class="px-8 py-3.5 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-sm strict-subheading transition-colors shadow-sm font-semibold text-center">
+            <a href="contact.html"
+              class="px-8 py-3.5 rounded-xl bg-medical-blueLight hover:bg-medical-blue text-white text-sm strict-subheading transition-colors shadow-sm font-semibold text-center">
               Request Evaluation Call
             </a>
           </div>
@@ -615,32 +739,36 @@
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 text-sm py-16 transition-colors duration-300">
+  <footer
+    class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 text-sm py-16 transition-colors duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-        
+
         <!-- Agency Info -->
         <div>
-          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse mb-6">
-            <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
-              <i class="fa-solid fa-passport text-lg"></i>
-            </div>
-            <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse mb-6">
+            <img src="assets/images/logo-light.svg" class="h-10 w-auto dark:hidden" alt="Im Consult Logo">
+            <img src="assets/images/logo-dark.svg" class="h-10 w-auto hidden dark:block" alt="Im Consult Logo">
           </a>
           <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs leading-relaxed mb-6">
-            Professional visa consultation, credential assessments, and skilled worker migration processing to make relocation simple.
+            Professional visa consultation, credential assessments, and skilled worker migration processing to make
+            relocation simple.
           </p>
           <div class="flex space-x-4 rtl:space-x-reverse">
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+            <a href="#"
+              class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
               <i class="fa-brands fa-facebook-f text-xs"></i>
             </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+            <a href="#"
+              class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
               <i class="fa-brands fa-twitter text-xs"></i>
             </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+            <a href="#"
+              class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
               <i class="fa-brands fa-instagram text-xs"></i>
             </a>
-            <a href="#" class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
+            <a href="#"
+              class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-medical-blueLight text-slate-600 dark:text-slate-300 hover:text-white dark:hover:text-white flex items-center justify-center transition-colors">
               <i class="fa-brands fa-linkedin-in text-xs"></i>
             </a>
           </div>
@@ -648,45 +776,71 @@
 
         <!-- Quick Links -->
         <div>
-          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Quick Links</h4>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Quick Links
+          </h4>
           <ul class="space-y-3">
-            <li><a href="index.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Home (Corporate)</a></li>
-            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Home (Pathways)</a></li>
-            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">About Our Firm</a></li>
-            <li><a href="eligibility-checker.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Eligibility Checker</a></li>
-            <li><a href="blog.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Advisory Blog</a></li>
-            <li><a href="dashboard.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Client Dashboard</a></li>
+            <li><a href="index.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Home
+                (Corporate)</a></li>
+            <li><a href="home-2.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Home
+                (Pathways)</a></li>
+            <li><a href="about.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">About
+                Our Firm</a></li>
+            <li><a href="eligibility-checker.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Eligibility
+                Checker</a></li>
+            <li><a href="blog.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Advisory
+                Blog</a></li>
+            <li><a href="dashboard.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Client
+                Dashboard</a></li>
           </ul>
         </div>
 
         <!-- Visa Streams -->
         <div>
-          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Visa Streams</h4>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Visa
+            Streams</h4>
           <ul class="space-y-3">
-            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Canada Express Entry</a></li>
-            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">UK Skilled Worker Route</a></li>
-            <li><a href="about.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Australia Skilled Migration</a></li>
-            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Provincial Nominee Streams</a></li>
-            <li><a href="home-2.html" class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Global Student Visas</a></li>
+            <li><a href="about.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Canada
+                Express Entry</a></li>
+            <li><a href="about.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">UK
+                Skilled Worker Route</a></li>
+            <li><a href="about.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Australia
+                Skilled Migration</a></li>
+            <li><a href="home-2.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Provincial
+                Nominee Streams</a></li>
+            <li><a href="home-2.html"
+                class="text-slate-500 hover:text-medical-blueLight dark:text-slate-400 dark:hover:text-white transition-colors strict-paragraph text-xs">Global
+                Student Visas</a></li>
           </ul>
         </div>
 
         <!-- Contact Info & Helpline -->
         <div>
-          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Contact &amp; Support</h4>
+          <h4 class="strict-heading text-sm text-medical-navy dark:text-white mb-6 uppercase tracking-wider">Contact
+            &amp; Support</h4>
           <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-3">
             104 Corporate Plaza, Suite 400, Boston, MA 02115
           </p>
           <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs mb-4">
             Email: contact@imconsult.com
           </p>
-         
+
         </div>
 
       </div>
 
       <!-- Bottom Bar -->
-      <div class="border-t border-slate-200 dark:border-slate-800/80 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-500">
+      <div
+        class="border-t border-slate-200 dark:border-slate-800/80 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-500">
         <p class="strict-paragraph">&copy; 2026 Im Consult. All rights reserved.</p>
         <div class="flex space-x-6 rtl:space-x-reverse mt-4 md:mt-0">
           <a href="#" class="hover:text-slate-800 dark:hover:text-slate-300 transition-colors">Privacy Policy</a>
@@ -715,7 +869,7 @@
         ],
         surgical: 'Express Entry Federal Skilled Worker (FSW) or Canadian Experience Class (CEC) entry route.',
         rehab: 'Maximize CRS points via secondary language tests, credentials evaluations, or provincial nomination selections.',
-        weeks: '6 Months Average Process',
+        weeks: '6 Months Process',
         linkText: 'Check Express Entry Eligibility'
       },
       australia: {
@@ -821,7 +975,7 @@
       document.getElementById('surgical-path').textContent = data.surgical;
       document.getElementById('rehab-path').textContent = data.rehab;
       document.getElementById('rehab-weeks').textContent = data.weeks;
-      
+
       const ctaLink = document.getElementById('consultation-link');
       if (ctaLink) {
         ctaLink.textContent = data.linkText;
@@ -859,7 +1013,7 @@
         const id = pin.getAttribute('id');
         if (id === `node-${jointKey}`) {
           pin.className = "joint-node active-node absolute w-5 h-5 rounded-full bg-medical-cyan/30 border-2 border-medical-cyan flex items-center justify-center hover:scale-125 transition-transform";
-          
+
           // Re-inject pings animation for selected nodes
           pin.innerHTML = `
             <span class="w-2 h-2 rounded-full bg-medical-cyan animate-ping absolute"></span>
@@ -881,4 +1035,5 @@
   <!-- Global Shared JS -->
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

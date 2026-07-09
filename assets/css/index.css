@@ -157,3 +157,61 @@ h1, h2, h3, .strict-heading {
     min-height: 720px !important;
   }
 }
+
+/* Global Text Sizing & Line Height Enhancements (Task 9) */
+p, .strict-paragraph {
+  font-size: 1.05rem !important; /* Slightly increased for readability */
+  line-height: 1.75 !important;
+}
+
+.text-xs {
+  font-size: 0.85rem !important; /* Make slightly larger: default is 12px, now ~13.5px */
+}
+
+.text-sm {
+  font-size: 0.95rem !important; /* Make slightly larger: default is 14px, now ~15px */
+}
+
+/* Light Mode High-Contrast Enhancements (Task 8) */
+.light body,
+.light .text-slate-600,
+.light .dark\:text-slate-600 {
+  color: #334155 !important; /* Slate 700 instead of 600 */
+}
+
+.light .text-slate-500,
+.light .dark\:text-slate-500 {
+  color: #475569 !important; /* Slate 600 instead of 500 */
+}
+
+.light .text-slate-450 {
+  color: #576579 !important;
+}
+
+.light .text-slate-400,
+.light .dark\:text-slate-400 {
+  color: #64748b !important; /* Slate 500 instead of 400 */
+}
+
+.light .text-medical-cyan {
+  color: #8C6935 !important; /* Dark bronze/gold instead of bright champagne on white */
+}
+
+.light .bg-medical-cyan\/15 {
+  background-color: rgba(140, 105, 53, 0.15) !important;
+}
+
+.light .border-medical-cyan\/30 {
+  border-color: rgba(140, 105, 53, 0.3) !important;
+}
+
+.light .text-slate-700,
+.light .dark\:text-slate-700 {
+  color: #0f172a !important; /* Slate 900 for high-contrast subheadings */
+}
+
+.light .text-slate-800,
+.light .dark\:text-slate-800 {
+  color: #020617 !important; /* Slate 950 for high-contrast titles */
+}
+

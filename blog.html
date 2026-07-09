@@ -25,11 +25,9 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- Agency Logo -->
-        <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse flex-shrink-0">
-          <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
-            <i class="fa-solid fa-passport text-lg"></i>
-          </div>
-          <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse flex-shrink-0">
+          <img src="assets/images/logo-light.svg" class="h-10 w-auto dark:hidden" alt="Im Consult Logo">
+          <img src="assets/images/logo-dark.svg" class="h-10 w-auto hidden dark:block" alt="Im Consult Logo">
         </a>
 
         <!-- Desktop Navigation -->
@@ -182,10 +180,10 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 flex flex-col lg:flex-row lg:block">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
           
           <!-- Articles Grid (Cols 1-3) -->
-          <div class="lg:col-span-3 space-y-8 order-2 lg:order-1">
+          <div class="lg:col-span-3 space-y-8">
             
             <div id="articles-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
               
@@ -300,7 +298,7 @@
           </div>
 
           <!-- Blog Categories Sidebar (Col 4) -->
-          <div class="space-y-8 order-1 lg:order-2">
+          <div class="space-y-8">
             
             <!-- Category Box -->
             <div class="p-6 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl">
@@ -339,18 +337,23 @@
               </ul>
             </div>
 
-            <!-- Newsletter Subscription -->
-            <div class="p-6 bg-slate-900 text-white rounded-2xl text-center relative overflow-hidden">
+            <!-- Newsletter Subscription (Redesigned) -->
+            <div class="p-8 bg-gradient-to-b from-slate-900 to-slate-950 text-white rounded-2xl text-center relative overflow-hidden border border-medical-blueLight/30 shadow-lg glow-bronze">
               <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:15px_15px]"></div>
               <div class="relative z-10">
-                <i class="fa-regular fa-paper-plane text-2xl text-medical-cyan mb-4 block"></i>
-                <h4 class="strict-heading text-sm text-white mb-2 uppercase tracking-wider">Weekly Visa Updates</h4>
-                <p class="strict-paragraph text-slate-400 text-xs mb-6">
+                <!-- Icon badge -->
+                <div class="w-12 h-12 rounded-full bg-medical-blueLight/10 text-medical-cyan flex items-center justify-center mx-auto mb-4 border border-medical-cyan/20">
+                  <i class="fa-regular fa-paper-plane text-xl animate-bounce"></i>
+                </div>
+                
+                <h4 class="strict-heading text-sm text-white mb-2 uppercase tracking-wider font-bold">Weekly Visa Updates</h4>
+                <p class="strict-paragraph text-slate-300 text-xs mb-6 max-w-xs mx-auto">
                   Subscribe to receive direct insights on Express Entry draws and pathway updates to your inbox.
                 </p>
-                <form id="newsletter-form" class="space-y-3">
-                  <input type="email" id="newsletter-email" required placeholder="Your email address" class="w-full px-3 py-2 text-xs rounded-lg border border-slate-700 bg-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-medical-cyan">
-                  <button type="submit" class="w-full py-2.5 rounded-lg bg-medical-blueLight text-white hover:bg-medical-blue text-xs strict-subheading transition-colors">
+                
+                <form id="newsletter-form" class="space-y-4 max-w-[260px] mx-auto">
+                  <input type="email" id="newsletter-email" required placeholder="Your email address" class="w-full px-4 py-3 text-xs rounded-xl border border-slate-700 bg-slate-800/80 text-white placeholder-slate-400 focus:outline-none focus:border-medical-cyan transition-colors text-center">
+                  <button type="submit" class="w-full py-2.5 rounded-xl bg-medical-blueLight text-white hover:bg-medical-blue text-xs strict-subheading transition-all duration-300 shadow-md shadow-medical-blueLight/10 truncate">
                     Subscribe
                   </button>
                   <p id="newsletter-msg" class="hidden text-xs strict-paragraph mt-2"></p>
@@ -657,11 +660,9 @@
         
         <!-- Agency Info -->
         <div>
-          <a href="index.html" class="flex items-center space-x-2 rtl:space-x-reverse mb-6">
-            <div class="w-10 h-10 rounded-lg bg-medical-blueLight flex items-center justify-center text-white">
-              <i class="fa-solid fa-passport text-lg"></i>
-            </div>
-            <span class="strict-heading text-xl tracking-tight text-medical-navy dark:text-white">Im Consult</span>
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse mb-6">
+            <img src="assets/images/logo-light.svg" class="h-10 w-auto dark:hidden" alt="Im Consult Logo">
+            <img src="assets/images/logo-dark.svg" class="h-10 w-auto hidden dark:block" alt="Im Consult Logo">
           </a>
           <p class="strict-paragraph text-slate-500 dark:text-slate-400 text-xs leading-relaxed mb-6">
             Expert immigration consulting, visa application management, and relocation advisory services to secure your pathway and ease your transition.

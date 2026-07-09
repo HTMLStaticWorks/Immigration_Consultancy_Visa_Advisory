@@ -56,6 +56,18 @@
     .animate-growVertical {
       animation: growVertical 0.5s ease-out forwards;
     }
+    
+    /* Increase paragraph & text readability */
+    p, .strict-paragraph {
+      font-size: 1.05rem !important;
+      line-height: 1.7 !important;
+    }
+    .text-xs {
+      font-size: 0.85rem !important; /* default 12px -> 13.5px */
+    }
+    .text-sm {
+      font-size: 0.95rem !important; /* default 14px -> 15.2px */
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-medical-darkBg dark:text-slate-100 min-h-screen transition-colors duration-300 overflow-hidden font-sans">
@@ -91,11 +103,9 @@
     <aside id="portal-sidebar" class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 h-full flex flex-col p-6 z-40 transition-transform duration-300 transform -translate-x-full lg:relative lg:translate-x-0 flex-shrink-0">
       
       <!-- Brand Logo -->
-      <a href="index.html" class="flex items-center space-x-2.5 rtl:space-x-reverse mb-8 hover:opacity-90 transition-opacity group">
-        <div class="w-10 h-10 rounded-xl bg-medical-blueLight flex items-center justify-center text-white flex-shrink-0 transition-transform group-hover:scale-105">
-          <i class="fa-solid fa-passport text-lg"></i>
-        </div>
-        <span class="strict-heading text-lg tracking-tight font-semibold text-medical-navy dark:text-white">Im Consult</span>
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse mb-8 hover:opacity-90 transition-opacity group">
+        <img src="assets/images/logo-light.svg" class="h-10 w-auto dark:hidden" alt="Im Consult Logo">
+        <img src="assets/images/logo-dark.svg" class="h-10 w-auto hidden dark:block" alt="Im Consult Logo">
       </a>
 
       <!-- Navigation Tabs -->
